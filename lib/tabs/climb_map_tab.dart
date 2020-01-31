@@ -39,11 +39,11 @@ class ClimbmapTab extends StatelessWidget {
   ///Neumorphism style decoration
   BoxDecoration _customBoxDecoration() {
     return BoxDecoration(
-        color: Color.fromRGBO(241, 243, 246, 100),
+        color: Colors.white,
         borderRadius: BorderRadius.circular(16.0),
         border: Border.all(
           color: Colors.white24, //borda interna
-          width: 0.8,
+          width: 0.6,
         ),
         boxShadow: [
           BoxShadow(

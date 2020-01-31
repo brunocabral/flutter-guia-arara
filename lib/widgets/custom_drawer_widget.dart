@@ -30,7 +30,7 @@ class CustomDrawer extends StatelessWidget {
               DrawerTile(Icons.home, "Início", pageController, 0),
               DrawerTile(Icons.place, "Como Chegar", pageController, 1),
               DrawerTile(Icons.map, "Croqui do Setores", pageController, 2),
-              DrawerTile(Icons.playlist_add_check, "Vias cadastradas", pageController, 3),
+              DrawerTile(Icons.playlist_add_check, "Setores e Vias", pageController, 3),
               DrawerTile(Icons.info_outline, "Sobre", pageController, 4),
             ],
           ),
