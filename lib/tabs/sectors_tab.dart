@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:guia_arara/tiles/sector_tile.dart';
 
-class RoutesTab extends StatelessWidget {
+class SectorsTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(

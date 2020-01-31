@@ -3,7 +3,7 @@ import 'package:guia_arara/tabs/climb_map_tab.dart';
 import 'package:guia_arara/tabs/home_tab.dart';
 import 'package:guia_arara/widgets/custom_drawer_widget.dart';
 import 'package:guia_arara/tabs/road_map_tab.dart';
-import 'package:guia_arara/tabs/routes_tab.dart';
+import 'package:guia_arara/tabs/sectors_tab.dart';
 
 class HomeScreen extends StatelessWidget {
   final _pageController = PageController(initialPage: 0);
@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
             title: Text("Setores"),
             centerTitle: true,
           ),
-          body: RoutesTab(),
+          body: SectorsTab(),
           drawer: CustomDrawer(_pageController),
         ),
 //        Scaffold(
