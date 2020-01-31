@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guia_arara/screens/routes_screen.dart';
 import 'package:guia_arara/tiles/sector_tile.dart';
 
 class SectorsTab extends StatelessWidget {
@@ -8,37 +9,37 @@ class SectorsTab extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0 ),
       children: <Widget>[
         SectorTile(
-            id: "01",
-            name: "Juliano Magalhães"
+          id:"01",
+          name:"Juliano Magalhães",
+          route: RoutesScreen("Juliano Magalhães"),
         ),
         SectorTile(
-            id:"02",
-            name:"Boulders"
+          id:"02",
+          name:"Boulders"
         ),
         SectorTile(
-            id:"03",
-            name:"Negativos"
-        )
-        ,
-        SectorTile(
-            id:"04",
-            name:"Fissuras"
+          id:"03",
+          name:"Negativos"
         ),
         SectorTile(
-            id:"05",
-            name:"Fenda"
+          id:"04",
+          name:"Fissuras"
         ),
         SectorTile(
-            id:"06",
-            name:"Escolinha"
+          id:"05",
+          name:"Fenda"
         ),
         SectorTile(
-            id:"07",
-            name:"Drone"
+          id:"06",
+          name:"Escolinha"
         ),
         SectorTile(
-            id:"--",
-            name:"Isoladas"
+          id:"07",
+          name:"Drone"
+        ),
+        SectorTile(
+          id:"--",
+          name:"Isoladas"
         ),
       ],
     );
