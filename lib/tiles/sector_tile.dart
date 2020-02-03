@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class SectorTile extends StatelessWidget {
 
   ///número do setor
@@ -38,15 +39,22 @@ class SectorTile extends StatelessWidget {
               Text(
                 id,
                 style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold
+                    fontSize: 18,
+                    fontWeight: FontWeight.w400
                 ),
               ),
             ],
           ),
-          title: Text(name),
+          title: Text(
+            name,
+            style: TextStyle(
+              fontWeight: FontWeight.w600,
+              fontSize: 18
+            ),
+          ),
         ),
       ),
     );
   }
+
 }
