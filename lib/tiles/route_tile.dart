@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:guia_arara/models/climbing_route.dart';
+import 'package:guia_arara/screens/details_screen.dart';
 
 class RouteTile extends StatelessWidget {
 
-  final String imgPath;
-  final String name;
-  final String type;
-  final String grade;
+  final ClimbingRoute climbingRoute;
 
-  RouteTile({this.imgPath, this.name, this.type, this.grade});
+  RouteTile({this.climbingRoute});
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: InkWell(
         splashColor: Colors.blueAccent,
-        onTap: (){
-//          Navigator.of(context).push(
-//              MaterialPageRoute(builder: (context) => DetalhesScreen())
-//          );
+        onTap: () {
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => DetailsScreen(climbingRoute))
+          );
         },
         child: ListTile(
           leading: Container(
@@ -26,8 +24,8 @@ class RouteTile extends StatelessWidget {
             width: 80,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: (imgPath != null)?
-                AssetImage(imgPath):
+                image: (climbingRoute.imgPath != null)?
+                AssetImage(climbingRoute.imgPath):
                 AssetImage("images/misc/placeholder.png"),
                 fit: BoxFit.cover
               ),
@@ -35,19 +33,19 @@ class RouteTile extends StatelessWidget {
             ),
           ),
           title: Text(
-            name ?? "Via sem nome",
+            climbingRoute.name ?? "Via sem nome",
             style: TextStyle(
               fontSize: 18.0
             ),
           ),
           subtitle: Text(
-            type ?? "-",
+            climbingRoute.type ?? "-",
             style: TextStyle(
-              color: _getRouteColorByType(type)
+              color: _getRouteColorByType(climbingRoute.type)
             ),
           ),
           trailing: Text(
-            grade,
+            climbingRoute.grade,
             style: TextStyle(
               fontSize: 17,
               fontWeight: FontWeight.w600

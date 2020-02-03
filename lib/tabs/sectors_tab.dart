@@ -21,9 +21,8 @@ class SectorsTab extends StatelessWidget {
 
     for (ClimbingSector setor in helper.setores) {
       tiles.add(SectorTile(
-        id: setor.id,
-        name: setor.name,
-        route: RoutesScreen(helper, setor.name),
+        climbingSector: setor,
+        pageRoute: RoutesScreen(helper, setor.name),
       ));
     }
     return tiles;

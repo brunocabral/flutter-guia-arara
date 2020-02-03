@@ -30,14 +30,7 @@ class RoutesScreen extends StatelessWidget {
     List<ClimbingRoute> routes = helper.getAllRoutesBySector(sectorName);
     
     for (ClimbingRoute route in routes) {
-      tiles.add(
-        RouteTile(
-          name: route.name,
-          type: route.type,
-          grade: route.grade,
-          imgPath: route.imgPath,
-        )
-      );
+      tiles.add(RouteTile(climbingRoute: route));
     }
 
     if (tiles.isEmpty){

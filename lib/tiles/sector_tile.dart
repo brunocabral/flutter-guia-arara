@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:guia_arara/models/climbing_sector.dart';
 
 
 class SectorTile extends StatelessWidget {
 
-  ///número do setor
-  final String id;
-
-  final String name;
+  final ClimbingSector climbingSector;
 
   ///Tela que irá ser redirecionada no evento onTap()
-  final Widget route;
+  final Widget pageRoute;
 
-  SectorTile({this.id, this.name, this.route});
+  SectorTile({this.climbingSector, this.pageRoute});
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +17,9 @@ class SectorTile extends StatelessWidget {
       child: InkWell(
         splashColor: Colors.blueAccent,
         onTap: (){
-          if (route != null) {
+          if (pageRoute != null) {
             Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => route)
+                MaterialPageRoute(builder: (context) => pageRoute)
             );
           }
         },
@@ -37,7 +35,7 @@ class SectorTile extends StatelessWidget {
                 ),
               ),
               Text(
-                id,
+                climbingSector.id,
                 style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w400
@@ -46,7 +44,7 @@ class SectorTile extends StatelessWidget {
             ],
           ),
           title: Text(
-            name,
+            climbingSector.name,
             style: TextStyle(
               fontWeight: FontWeight.w600,
               fontSize: 18
