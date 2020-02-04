@@ -52,7 +52,9 @@ class ClimbingHelper {
         type: ClimbingRoute.boulderType,
         grade: "V1",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano1.jpg"
+        imgPath: dirImagesJuliano + "juliano1.jpg",
+        description: "Linha com 3 movimentos e finalizando com um bote. "
+            "\nExcelente exercício de bote para os iniciantes."
       )
     );
     vias.add(
@@ -62,7 +64,8 @@ class ClimbingHelper {
         type: ClimbingRoute.boulderType,
         grade: "V3",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano1.jpg"
+        imgPath: dirImagesJuliano + "juliano1.jpg",
+        description: "Sua saída inicia em um reglete partindo para mais um reglete, finalizando com um bote."
       )
     );
     vias.add(
@@ -87,42 +90,45 @@ class ClimbingHelper {
     );
     vias.add(
         ClimbingRoute(
-            id: "05",
-            name: "Bico de Arara",
-            type: ClimbingRoute.boulderType,
-            grade: "Projeto",
-            sector: _getSetorByName(ClimbingSector.setorJuliano),
-            imgPath: dirImagesJuliano + "juliano2.jpg"
+          id: "05",
+          name: "Bico de Arara",
+          type: ClimbingRoute.boulderType,
+          grade: "Projeto",
+          sector: _getSetorByName(ClimbingSector.setorJuliano),
+          imgPath: dirImagesJuliano + "juliano2.jpg"
         )
     );
     vias.add(
         ClimbingRoute(
-            id: "06",
-            name: "Arara Quebrada",
-            type: ClimbingRoute.sportType,
-            grade: "5º",
-            sector: _getSetorByName(ClimbingSector.setorJuliano),
-            imgPath: dirImagesJuliano + "juliano2.jpg"
+          id: "06",
+          name: "Arara Quebrada",
+          type: ClimbingRoute.sportType,
+          grade: "5º",
+          sector: _getSetorByName(ClimbingSector.setorJuliano),
+          imgPath: dirImagesJuliano + "juliano2.jpg",
+          description: "Via de posicionamento de pés e leve negatividade. Ótima via para iniciantes.",
         )
     );
     vias.add(
         ClimbingRoute(
-            id: "07",
-            name: "Arara de Carvão",
-            type: ClimbingRoute.boulderType,
-            grade: "Projeto",
-            sector: _getSetorByName(ClimbingSector.setorJuliano),
-            imgPath: dirImagesJuliano + "juliano2.jpg"
+          id: "07",
+          name: "Arara de Carvão",
+          type: ClimbingRoute.boulderType,
+          grade: "Projeto",
+          sector: _getSetorByName(ClimbingSector.setorJuliano),
+          imgPath: dirImagesJuliano + "juliano2.jpg"
         )
     );
     vias.add(
         ClimbingRoute(
-            id: "08",
-            name: "'Nós é Maqonha'",
-            type: ClimbingRoute.sportType,
-            grade: "7b",
-            sector: _getSetorByName(ClimbingSector.setorJuliano),
-            imgPath: dirImagesJuliano + "juliano2.jpg"
+          id: "08",
+          name: "'Nós é Maqonha'",
+          type: ClimbingRoute.sportType,
+          grade: "7b",
+          sector: _getSetorByName(ClimbingSector.setorJuliano),
+          imgPath: dirImagesJuliano + "juliano2.jpg",
+          description: "Via identificada pela frase anônima escrita na base da via. Saída relativamente dura e depois "
+                "segue por uma fenda horizontal."
         )
     );
     return vias;
