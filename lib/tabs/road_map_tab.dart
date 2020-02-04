@@ -30,7 +30,12 @@ class RoadmapTab extends StatelessWidget {
                     color: Theme.of(context).scaffoldBackgroundColor,
                   ),
                   imageProvider: AssetImage("images/maps/estrada.png")),
+              ),
             ),
+            SizedBox(height: 8.0,),
+            Align(
+                alignment: Alignment.center,
+                child: Text("(Toque no mapa para dar zoom)")
             )
           ],
         ),

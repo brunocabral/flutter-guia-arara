@@ -29,6 +29,11 @@ class ClimbmapTab extends StatelessWidget {
                   imageProvider: AssetImage("images/maps/croqui.png")
                 ),
               ),
+            ),
+            SizedBox(height: 8.0),
+            Align(
+                alignment: Alignment.center,
+                child: Text("(Toque no mapa para dar zoom)")
             )
           ],
         ),
