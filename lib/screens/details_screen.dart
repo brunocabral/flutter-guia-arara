@@ -28,9 +28,7 @@ class DetailsScreen extends StatelessWidget {
                   backgroundDecoration: BoxDecoration(
                     color: Theme.of(context).scaffoldBackgroundColor,
                   ),
-                  imageProvider: (route.imgPath != null)?
-                  AssetImage(route.imgPath):
-                  AssetImage("images/misc/placeholder.png"),
+                  imageProvider: _getImage(route.imgPath),
               ),
             ),
           ),
@@ -57,6 +55,18 @@ class DetailsScreen extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  ///Carrega imagem
+  AssetImage _getImage(String imgPath) {
+    AssetImage img;
+    AssetImage placeholderImg = AssetImage("images/misc/placeholder.png");
+    try {
+      img = (imgPath != null) ? AssetImage(imgPath): placeholderImg;
+    } catch (e) {
+      return placeholderImg;
+    }
+    return img;
   }
 
   Container _buildContent(context, ClimbingRoute route) {
@@ -109,7 +119,21 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 32.0,),
+                SizedBox(height: 16.0),
+                //Constrói chip apenas se existir observação
+                route.warningNote != null ?
+                Chip(
+                  label: Text("Observação"),
+                  backgroundColor: Colors.deepOrange,
+                ) : SizedBox.shrink(),
+                Text(route.warningNote ?? "",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Color.fromRGBO(133, 8, 8, 1),
+                    height: 1.2
+                  ),
+                ),
+                SizedBox(height: 8.0,),
                 Text(route.description ?? "Nenhuma descrição cadastrada",
                   style: TextStyle(
                     fontSize: 18,
@@ -123,6 +147,7 @@ class DetailsScreen extends StatelessWidget {
         );
   }
 
+  ///Define cor do Chip a partir do tipo de via(boulder, esportiva ou trad)
   Color _getChipColorByType(String type) {
     switch (type) {
       case ClimbingRoute.boulderType:
@@ -161,7 +186,6 @@ class DetailsScreen extends StatelessWidget {
               color: Color.fromRGBO(163, 177, 198, 0.2),
               offset: Offset(9, 9),
               blurRadius: 12.0),
-
         ]);
   }
 }

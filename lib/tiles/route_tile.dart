@@ -24,9 +24,7 @@ class RouteTile extends StatelessWidget {
             width: 80,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: (climbingRoute.imgPath != null)?
-                AssetImage(climbingRoute.imgPath):
-                AssetImage("images/misc/placeholder.png"),
+                image: _getImage(climbingRoute.imgPath),
                 fit: BoxFit.cover
               ),
               color: Colors.blueGrey
@@ -56,6 +54,18 @@ class RouteTile extends StatelessWidget {
     );
   }
 
+  ///Carrega imagem
+  AssetImage _getImage(String imgPath) {
+    AssetImage img;
+    AssetImage placeholderImg = AssetImage("images/misc/placeholder.png");
+    try {
+      img = (imgPath != null) ? AssetImage(imgPath) : placeholderImg;
+    } catch (e) {
+      return placeholderImg;
+    }
+    return img;
+  }
+  
   Color _getRouteColorByType(String type) {
     switch (type) {
       case ClimbingRoute.boulderType:

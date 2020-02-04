@@ -15,10 +15,23 @@ class ClimbingRoute {
   String type;
   String grade;
   String description;
-  String imgPath;
-  ClimbingSector sector; //foreign key
 
-  ClimbingRoute({this.id, this.name, this.type, this.grade, this.description, this.imgPath, this.sector});
+  ///Descrição adicional que necessite informar sobre a via
+  String warningNote;
+
+  String imgPath;
+  ClimbingSector sector;
+
+  ClimbingRoute({
+    this.id,
+    this.name,
+    this.type,
+    this.grade,
+    this.description,
+    this.warningNote,
+    this.imgPath,
+    this.sector
+  });
 
   @override
   String toString() {

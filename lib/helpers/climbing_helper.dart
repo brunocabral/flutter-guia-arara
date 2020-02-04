@@ -227,9 +227,9 @@ class ClimbingHelper {
         grade: "8º",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
         imgPath: dirImagesNegativos + "negativos.jpg",
-        description: "Via de difícil leitura. Possui movimentos alongados e de força logo no negativo da saída."
-            "\nObservação ! Saia utilizando as duas proteções fixas do início para evitar o fator 2 e choques"
-            " entre o escalador e o segurança em caso de queda."
+        description: "Via de difícil leitura. Possui movimentos alongados e de força logo no negativo da saída.",
+        warningNote: "Saia utilizando as duas proteções fixas do início para evitar o fator 2 e choques "
+          "entre o escalador e o segurança em caso de queda."
       )
     );
     vias.add(
@@ -266,9 +266,10 @@ class ClimbingHelper {
         imgPath: dirImagesNegativos + "negativos.jpg",
         description: "Uma das linhas mais interessantes da Arara. "
             "\nFica localizada em um tipo de gruta, sua saída se dá do fundo e seguindo por uma laca de teto gigante com boas pegas."
-            "\nApós, realiza-se a virada para o negativo, seguindo por agarras e batentes até o final."
-            "\nObservação ! Saia utilizando as duas proteções fixas do início para evitar o fator 2 e choques"
+            "\nApós, realiza-se a virada para o negativo, seguindo por agarras e batentes até o final.",
+        warningNote: "Saia utilizando as duas proteções fixas do início para evitar o fator 2 e choques "
             "entre o escalador e o segurança em caso de queda."
+
       )
     );
     vias.add(
@@ -475,9 +476,9 @@ class ClimbingHelper {
         imgPath: dirImagesFenda + "maraja-courocobra.jpg",
         description: "Via positiva clássica do setor, é bem protegida. Nos primeiros 30m é 5º grau."
             "\nA segunda enfiada** (“parte 2”) são mais uns 20m na diagonal de 7º grau em regletes bem pequenos. "
-            "\nRapel em corda dupla."
-            "\nObservação ! - Apenas por prevenção, antes de escalar é recomendado dar uma olhada se existe"
-            "a presença de marimbondos/abelhas na árvore que está bem encostada na base da via."
+            "\nRapel em corda dupla.",
+        warningNote: "Apenas por prevenção, antes de escalar é recomendado dar uma olhada se existe"
+          "a presença de marimbondos/abelhas na árvore que está bem encostada na base da via."
       )
     );
     //##########################################################################
@@ -505,8 +506,8 @@ class ClimbingHelper {
         grade: "4º Sup**",
         sector: _getSetorByName(ClimbingSector.setorEscolinha),
         imgPath: dirImagesEscolinha + "primario.jpg",
-        description: "Via positiva consolidada até o grampo, a partir daí a via não está limpa e não tem cadena. "
-            "\nObservação ! - A via encontra-se, até o momento, muita suja e com possíveis agarras “semi soltas”,"
+        description: "Via positiva consolidada até o grampo, a partir daí a via não está limpa e não tem cadena.",
+        warningNote: "A via encontra-se, até o momento, muita suja e com possíveis agarras “semi soltas”, "
             "quem decidir escalá-la requer atenção redobrada (e pro seg!)."
       )
     );
@@ -518,8 +519,8 @@ class ClimbingHelper {
         grade: "5º",
         sector: _getSetorByName(ClimbingSector.setorEscolinha),
         imgPath: dirImagesEscolinha + "bolas-secundario.jpg",
-        description: "Siga pela fenda ou à esquerda dela."
-            "\nObservação ! - Cuidado para preservar o único cabeça de frade (cacto) "
+        description: "Siga pela fenda ou à esquerda dela.",
+        warningNote: "Cuidado para preservar o único cabeça de frade (cacto) "
             "restante que simboliza o início da via : )"
       )
     );
@@ -570,7 +571,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7c",
         sector: _getSetorByName(ClimbingSector.setorDrone),
-        imgPath: dirImagesDrone+ "drone.jpg",
+        imgPath: dirImagesDrone + "drone.jpg",
       )
     );
     vias.add(
@@ -580,7 +581,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "Projeto",
         sector: _getSetorByName(ClimbingSector.setorDrone),
-        imgPath: dirImagesEscolinha + "drone.jpg",
+        imgPath: dirImagesDrone + "drone.jpg",
       )
     );
 
