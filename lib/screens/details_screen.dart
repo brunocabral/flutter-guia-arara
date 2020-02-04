@@ -22,9 +22,9 @@ class DetailsScreen extends StatelessWidget {
             height: 350,
             child: ClipRect(
               child: PhotoView(
-                  initialScale: PhotoViewComputedScale.contained * 1.1,
-                  minScale: PhotoViewComputedScale.contained * 1.1,
-                  maxScale: PhotoViewComputedScale.contained * 2.5,
+                  initialScale: PhotoViewComputedScale.contained * 1.0,
+                  minScale: PhotoViewComputedScale.contained * 1.0,
+                  maxScale: PhotoViewComputedScale.contained * 2.8,
                   backgroundDecoration: BoxDecoration(
                     color: Theme.of(context).scaffoldBackgroundColor,
                   ),
