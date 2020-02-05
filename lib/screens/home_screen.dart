@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:guia_arara/tabs/climb_map_tab.dart';
+import 'package:guia_arara/tabs/grade_tab.dart';
 import 'package:guia_arara/tabs/home_tab.dart';
 import 'package:guia_arara/widgets/custom_drawer_widget.dart';
 import 'package:guia_arara/tabs/road_map_tab.dart';
@@ -27,15 +28,6 @@ class HomeScreen extends StatelessWidget {
           body: RoadmapTab(),
           drawer: CustomDrawer(_pageController),
         ),
-//        Scaffold(
-//          appBar: AppBar(
-//            elevation: 2,
-//            title: Text("Graduação"),
-//            centerTitle: true,
-//          ),
-//          body: GradeTab(),
-//          drawer: CustomDrawer(_pageController),
-//        ),
         Scaffold(
           appBar: AppBar(
             elevation: 2,
@@ -43,6 +35,15 @@ class HomeScreen extends StatelessWidget {
             centerTitle: true,
           ),
           body: ClimbmapTab(),
+          drawer: CustomDrawer(_pageController),
+        ),
+        Scaffold(
+          appBar: AppBar(
+            elevation: 2,
+            title: Text("Graduação"),
+            centerTitle: true,
+          ),
+          body: GradeTab(),
           drawer: CustomDrawer(_pageController),
         ),
         Scaffold(

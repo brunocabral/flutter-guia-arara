@@ -6,7 +6,7 @@ class HomeTab extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Container(
-          color: Colors.deepOrangeAccent,
+          color: Theme.of(context).primaryColor,
           child: CustomScrollView(
             slivers: <Widget>[
               SliverAppBar(

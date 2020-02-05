@@ -69,11 +69,11 @@ class RouteTile extends StatelessWidget {
   Color _getRouteColorByType(String type) {
     switch (type) {
       case ClimbingRoute.boulderType:
-        return Colors.deepPurpleAccent;
+        return Colors.deepOrange;
       case ClimbingRoute.sportType:
         return Colors.teal;
       case ClimbingRoute.tradType:
-        return Colors.green;
+        return Colors.deepPurpleAccent;
       default:
         return Colors.grey;
     }
