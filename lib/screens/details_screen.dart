@@ -6,6 +6,8 @@ class DetailsScreen extends StatelessWidget {
 
   final ClimbingRoute route;
 
+  final double _circleSize =  80;
+
   DetailsScreen(this.route);
 
   @override
@@ -18,17 +20,20 @@ class DetailsScreen extends StatelessWidget {
       ),
       body: Stack(
         children: <Widget>[
-          Container(
-            height: 350,
-            child: ClipRect(
-              child: PhotoView(
-                  initialScale: PhotoViewComputedScale.contained * 1.0,
-                  minScale: PhotoViewComputedScale.contained * 1.0,
-                  maxScale: PhotoViewComputedScale.contained * 2.8,
-                  backgroundDecoration: BoxDecoration(
-                    color: Theme.of(context).scaffoldBackgroundColor,
-                  ),
-                  imageProvider: _getImage(route.imgPath),
+          Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 2 - (_circleSize / 2),
+              child: ClipRect(
+                child: PhotoView(
+                    initialScale: PhotoViewComputedScale.contained * 1.0,
+                    minScale: PhotoViewComputedScale.contained * 1.0,
+                    maxScale: PhotoViewComputedScale.contained * 2.8,
+                    backgroundDecoration: BoxDecoration(
+                      color: Colors.black12,
+                    ),
+                    imageProvider: _getImage(route.imgPath),
+                ),
               ),
             ),
           ),
@@ -36,7 +41,7 @@ class DetailsScreen extends StatelessWidget {
           Align(
             alignment: Alignment.center,
             child: Container(
-              height: 80, width: 80,
+              height: _circleSize, width: _circleSize,
               decoration: new BoxDecoration(
                 border: Border.all(color: Theme.of(context).scaffoldBackgroundColor, width: 10),
                 shape: BoxShape.circle,
@@ -71,7 +76,7 @@ class DetailsScreen extends StatelessWidget {
 
   Container _buildContent(context, ClimbingRoute route) {
     return Container(
-          height: MediaQuery.of(context).size.height / 2.4,
+          height: MediaQuery.of(context).size.height / 2 - _circleSize,
           padding: EdgeInsets.symmetric(horizontal: 8.0),
           child: SingleChildScrollView(
             padding: EdgeInsets.all(8),

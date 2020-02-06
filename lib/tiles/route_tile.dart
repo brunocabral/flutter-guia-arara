@@ -22,13 +22,7 @@ class RouteTile extends StatelessWidget {
           leading: Container(
             height: 80,
             width: 80,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: _getImage(climbingRoute.imgPath),
-                fit: BoxFit.cover
-              ),
-              color: Colors.blueGrey
-            ),
+            child: Image(image:_getImage(climbingRoute.imgPath),),
           ),
           title: Text(
             climbingRoute.name ?? "Via sem nome",

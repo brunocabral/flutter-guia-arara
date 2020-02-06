@@ -48,7 +48,6 @@ flutter:
   assets:
     - images/maps/
     - images/misc/
-    - images/icons/
     - images/setores/juliano/
     - images/setores/boulders/
     - images/setores/negativos/
