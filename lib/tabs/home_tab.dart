@@ -128,9 +128,8 @@ class HomeTab extends StatelessWidget {
                           ),
                           SizedBox(height: 16.0),
                           CustomInfoTile(
-                              text: "A sua segurança depende do seu próprio julgamento, "
-                                  "baseado numa instrução competente, experiência e conhecimento da sua real "
-                                  "habilidade em escalar (seu limite).",
+                              text: "Resolva os movimentos da via limpando e deixando a via mais segura, "
+                                  "evitando ao máximo colar ou cavar agarras.",
                               iconData: FontAwesomeIcons.check
                           ),
                           SizedBox(height: 16.0),
