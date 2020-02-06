@@ -43,6 +43,7 @@ class RoadmapTab extends StatelessWidget {
               alignment: Alignment.center,
               child: GestureDetector(
                 child: Chip(
+                  avatar: Icon(Icons.pin_drop, color: Theme.of(context).primaryColor,),
                   label: Text("Ver no Maps"),
                   backgroundColor: Colors.white,
                   elevation: 1,
