@@ -51,7 +51,7 @@ class GradeTab extends StatelessWidget {
                       backgroundColor: Theme.of(context).primaryColor,
                       color: Colors.white)
               ),
-              Text("Hueco(USA)",
+              Text("Hueco",
                   style: TextStyle(
                       fontWeight: FontWeight.w900,
                       backgroundColor: Theme.of(context).primaryColor,

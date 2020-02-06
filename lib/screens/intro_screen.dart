@@ -134,9 +134,9 @@ class _IntroScreenState extends State<IntroScreen> {
 
   Widget renderDoneBtn() {
     return Text(
-        "Concordo!",
+        "Concordo",
       style: TextStyle(
-        fontSize: 14.0,
+        fontSize: 12.0,
         fontWeight: FontWeight.bold,
         color: Colors.white
       ),
