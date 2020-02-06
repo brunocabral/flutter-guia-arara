@@ -29,6 +29,7 @@ class GradeTab extends StatelessWidget {
     );
   }
 
+  ///Constrói tabela do nível de dificuldade de vias
   Table _buildTable(BuildContext context){
     return Table(
       border: TableBorder.all(width: 2.0, color: Color.fromRGBO(163, 177, 198, 0.2)),
@@ -193,6 +194,7 @@ class GradeTab extends StatelessWidget {
           width: 0.6,
         ),
         boxShadow: [
+          //bottom wide subtle dark shadow
           BoxShadow(
               color: Color.fromRGBO(55, 84, 170, 0.05),
               offset: Offset(30, 30),

@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:guia_arara/screens/home_screen.dart';
+import 'package:guia_arara/screens/intro_screen.dart';
+import 'package:guia_arara/tabs/home_tab.dart';
 
+
+///Constrói parágrafos com ícones, são utilizados nas telas de introdução [IntroScreen]
+///e [HomeTab] que contem as orientações básicas.
 class CustomInfoTile extends StatelessWidget {
 
   final String text;
   final IconData iconData;
-  double iconSize; //default
-  double textFontSize; //default
+  double iconSize;
+  double textFontSize;
 
   CustomInfoTile({@required this.text, @required this.iconData, this.iconSize, this.textFontSize});
 

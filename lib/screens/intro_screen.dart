@@ -27,7 +27,8 @@ class _IntroScreenState extends State<IntroScreen> {
             "\n\n Primeiramente, leia com atenção as orientações básicas a seguir!",
         styleDescription: TextStyle(color: Colors.white, fontSize: 20.0, fontStyle: FontStyle.italic, fontFamily: 'Raleway'),
         marginDescription: EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0, bottom: 70.0),
-        backgroundColor: Colors.green,
+        colorBegin: Color.fromRGBO(0, 242, 96, 1),
+        colorEnd: Color.fromRGBO(5, 117, 230, 1),
         directionColorBegin: Alignment.topLeft,
         directionColorEnd: Alignment.bottomRight,
         onCenterItemPress: () {},
@@ -37,6 +38,7 @@ class _IntroScreenState extends State<IntroScreen> {
       new Slide(
         title: "ATENÇÃO!",
         maxLineTitle: 1,
+        marginTitle: EdgeInsets.only(top: 32.0),
         styleTitle:
         TextStyle(color: Colors.white, fontSize: 30.0, fontWeight: FontWeight.bold, fontFamily: 'RobotoMono'),
         widgetDescription: Column(
@@ -45,7 +47,7 @@ class _IntroScreenState extends State<IntroScreen> {
               text: "A escalada em rocha é uma atividade inerentemente perigosa que pode resultar em graves ferimentos ou até em morte.",
               iconData: FontAwesomeIcons.userInjured,
               iconSize: 40.0,
-              textFontSize: 19.0,
+              textFontSize: 18.0,
             ),
             SizedBox(height: 16.0),
             CustomInfoTile(
@@ -55,7 +57,7 @@ class _IntroScreenState extends State<IntroScreen> {
                   "mesmo.",
               iconData: Icons.close,
               iconSize: 44.0,
-              textFontSize: 19.0,
+              textFontSize: 18.0,
             ),
             SizedBox(height: 16.0),
             CustomInfoTile(
@@ -63,12 +65,15 @@ class _IntroScreenState extends State<IntroScreen> {
                   "já que sempre há o risco de soltura de fragmentos vindo de cima.",
               iconData: FontAwesomeIcons.hardHat,
               iconSize: 44.0,
-              textFontSize: 19.0,
+              textFontSize: 18.0,
             ),
           ],
         ),
         marginDescription: EdgeInsets.only(left: 20.0, right: 15.0, top: 20.0, bottom: 70.0),
-        backgroundColor: Colors.blue,
+        colorBegin: Color.fromRGBO(5, 117, 230, 1),
+        colorEnd: Color.fromRGBO(0, 242, 96, 1) ,
+        directionColorBegin: Alignment.bottomLeft,
+        directionColorEnd: Alignment.topRight,
         onCenterItemPress: () {},
       ),
     );
@@ -76,6 +81,7 @@ class _IntroScreenState extends State<IntroScreen> {
       new Slide(
         title: "ATENÇÃO!",
         maxLineTitle: 1,
+        marginTitle: EdgeInsets.only(top: 32.0),
         styleTitle:
         TextStyle(color: Colors.white, fontSize: 30.0, fontWeight: FontWeight.bold, fontFamily: 'RobotoMono'),
         widgetDescription: Column(
@@ -86,7 +92,7 @@ class _IntroScreenState extends State<IntroScreen> {
                   "para que os riscos sejam reduzidos.",
               iconData: FontAwesomeIcons.thumbsUp,
               iconSize: 44.0,
-              textFontSize: 19.0,
+              textFontSize: 18.0,
             ),
             SizedBox(height: 16.0),
             CustomInfoTile(
@@ -95,7 +101,7 @@ class _IntroScreenState extends State<IntroScreen> {
                   "habilidade em escalar (seu limite).",
               iconData: FontAwesomeIcons.brain,
               iconSize: 44.0,
-              textFontSize: 19.0,
+              textFontSize: 18.0,
             ),
             SizedBox(height: 16.0),
             CustomInfoTile(
@@ -105,19 +111,22 @@ class _IntroScreenState extends State<IntroScreen> {
                   "um instrutor ou guia especializado.",
               iconData: FontAwesomeIcons.questionCircle,
               iconSize: 44.0,
-              textFontSize: 19.0,
+              textFontSize: 18.0,
             ),
           ],
         ),
         marginDescription: EdgeInsets.only(left: 20.0, right: 15.0, top: 20.0, bottom: 70.0),
-        backgroundColor: Colors.deepOrange,
+        colorBegin: Color.fromRGBO(0, 242, 96, 1),
+        colorEnd: Color.fromRGBO(5, 117, 230, 1),
+        directionColorBegin: Alignment.topLeft,
+        directionColorEnd: Alignment.bottomRight,
         onCenterItemPress: () {},
       ),
     );
   }
 
   void onDonePress() {
-    ///TOD - Shared Preferences - não repetir tela depois da 1a vez
+    ///TODO - Shared Preferences - não repetir tela depois da 1a vez
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => HomeScreen()),

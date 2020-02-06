@@ -18,14 +18,14 @@ class HomeTab extends StatelessWidget {
                 backgroundColor: Theme.of(context).primaryColor,
                 elevation: 0.0,
                 flexibleSpace: FlexibleSpaceBar(
-                  title: const Text("Guia Arara 2019"),
+                  title: const Text("Orientações básicas"),
                   centerTitle: true,
                 ),
               ),
               SliverToBoxAdapter(
                   child: SingleChildScrollView(
                     child: Container(
-                       padding: EdgeInsets.all(20),
+                       padding: EdgeInsets.all(20.0),
                        decoration: BoxDecoration(
                          color: Colors.black87,
                          image: DecorationImage(
@@ -37,6 +37,9 @@ class HomeTab extends StatelessWidget {
                        ),
                       child: Column(
                         children: <Widget>[
+                          SizedBox(
+                              height: 320,
+                              child: Image(image: AssetImage("images/misc/capa_texto.png"),fit: BoxFit.scaleDown,)),
                           Text(
                             "Segurança",
                             style: TextStyle(

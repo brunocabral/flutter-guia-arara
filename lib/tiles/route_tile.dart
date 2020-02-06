@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:guia_arara/models/climbing_route.dart';
 import 'package:guia_arara/screens/details_screen.dart';
 
+///Constrói o tile da lista de vias
 class RouteTile extends StatelessWidget {
 
   final ClimbingRoute climbingRoute;
@@ -48,7 +49,7 @@ class RouteTile extends StatelessWidget {
     );
   }
 
-  ///Carrega imagem
+  ///Carrega imagem da via
   AssetImage _getImage(String imgPath) {
     AssetImage img;
     AssetImage placeholderImg = AssetImage("images/misc/placeholder.png");
@@ -59,7 +60,8 @@ class RouteTile extends StatelessWidget {
     }
     return img;
   }
-  
+
+  ///Define a cor a partir do tipo de via(boulder, esportiva ou trad)
   Color _getRouteColorByType(String type) {
     switch (type) {
       case ClimbingRoute.boulderType:

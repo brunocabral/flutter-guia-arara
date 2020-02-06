@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:guia_arara/models/climbing_route.dart';
 import 'package:photo_view/photo_view.dart';
 
+
+///Visualiza as informações detalhadas de uma [ClimbingRoute]
 class DetailsScreen extends StatelessWidget {
 
   final ClimbingRoute route;
@@ -62,7 +64,7 @@ class DetailsScreen extends StatelessWidget {
     );
   }
 
-  ///Carrega imagem
+  ///Carrega imagem da via
   AssetImage _getImage(String imgPath) {
     AssetImage img;
     AssetImage placeholderImg = AssetImage("images/misc/placeholder.png");
