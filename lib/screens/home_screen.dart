@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guia_arara/tabs/about_tab.dart';
 import 'package:guia_arara/tabs/climb_map_tab.dart';
 import 'package:guia_arara/tabs/grade_tab.dart';
 import 'package:guia_arara/tabs/home_tab.dart';
@@ -55,15 +56,15 @@ class HomeScreen extends StatelessWidget {
           body: SectorsTab(),
           drawer: CustomDrawer(_pageController),
         ),
-//        Scaffold(
-//          appBar: AppBar(
-//            elevation: 2,
-//            title: Text("Sobre"),
-//            centerTitle: true,
-//          ),
-//          body: AboutTab(),
-//          drawer: CustomDrawer(_pageController),
-//        ),
+        Scaffold(
+          appBar: AppBar(
+            elevation: 2,
+            title: Text("Sobre"),
+            centerTitle: true,
+          ),
+          body: AboutTab(),
+          drawer: CustomDrawer(_pageController),
+        ),
       ],
     );
   }

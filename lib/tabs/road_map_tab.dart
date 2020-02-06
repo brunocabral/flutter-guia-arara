@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
+import 'package:url_launcher/url_launcher.dart';
 //import 'package:photo_view/photo_view.dart';
 
 class RoadmapTab extends StatelessWidget {
@@ -7,7 +8,7 @@ class RoadmapTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        height: 600,
+        height: 800,
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,7 +37,40 @@ class RoadmapTab extends StatelessWidget {
             Align(
                 alignment: Alignment.center,
                 child: Text("(Toque no mapa para dar zoom)")
+            ),
+            SizedBox(height: 8.0,),
+            Align(
+              alignment: Alignment.center,
+              child: GestureDetector(
+                child: Chip(
+                  label: Text("Ver no Maps"),
+                  backgroundColor: Colors.white,
+                  elevation: 1,
+                ),
+                onTap: () async {
+                  final String lat = "-10.709755";
+                  final String lng = "-37.615849";
+                  final String googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=$lat,$lng";
+                  //For iOS
+//                final String appleMapsUrl = "https://maps.apple.com/?q=$lat,$lng";
+
+                  if (await canLaunch(googleMapsUrl)) {
+                    await launch(googleMapsUrl);
+                  }
+                  else {
+                    throw "Couldn't launch URL $googleMapsUrl";
+                  }
+
+                  //For iOS
+//                if (await canLaunch(appleMapsUrl)) {
+//                  await launch(appleMapsUrl, forceSafariVC: false);
+//                } else {
+//                  throw "Couldn't launch URL";
+//                }
+                },
+              ),
             )
+
           ],
         ),
       ),

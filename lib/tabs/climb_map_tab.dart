@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
-//import 'package:photo_view/photo_view.dart';
 
 class ClimbmapTab extends StatelessWidget {
   @override
@@ -65,7 +64,6 @@ class ClimbmapTab extends StatelessWidget {
               color: Color.fromRGBO(163, 177, 198, 0.2),
               offset: Offset(9, 9),
               blurRadius: 12.0),
-
         ]);
   }
 }
