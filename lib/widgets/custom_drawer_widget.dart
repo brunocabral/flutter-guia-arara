@@ -22,7 +22,7 @@ class CustomDrawer extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(0.0, 16.0, 16.0, 8.0),
                 height: 170.0,
                 decoration: BoxDecoration(
-                    image: DecorationImage(image: AssetImage("images/misc/capa_texto2.png"),fit: BoxFit.cover)
+                    image: DecorationImage(image: AssetImage("images/misc/capa_texto.png"),fit: BoxFit.cover)
                 ),
               ),
               Divider(),
