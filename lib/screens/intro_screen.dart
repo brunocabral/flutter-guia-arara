@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:guia_arara/screens/home_screen.dart';
+import 'package:guia_arara/tiles/info_tile.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
 
@@ -40,23 +41,29 @@ class _IntroScreenState extends State<IntroScreen> {
         TextStyle(color: Colors.white, fontSize: 30.0, fontWeight: FontWeight.bold, fontFamily: 'RobotoMono'),
         widgetDescription: Column(
           children: <Widget>[
-            _buildParagraph(
+            CustomInfoTile(
               text: "A escalada em rocha é uma atividade inerentemente perigosa que pode resultar em graves ferimentos ou até em morte.",
-              iconData: FontAwesomeIcons.userInjured
+              iconData: FontAwesomeIcons.userInjured,
+              iconSize: 40.0,
+              textFontSize: 19.0,
             ),
             SizedBox(height: 16.0),
-            _buildParagraph(
-                text: "Para sua segurança pessoal, não dependa exclusivamente de "
-                    "nenhuma informação obtida deste aplicativo. Não nos responsabilizamos "
-                    "ou oferecemos quaisquer garantias referentes a todo o conteúdo do "
-                    "mesmo.",
-                iconData: Icons.close
+            CustomInfoTile(
+              text: "Para sua segurança pessoal, não dependa exclusivamente de "
+                  "nenhuma informação obtida deste aplicativo. Não nos responsabilizamos "
+                  "ou oferecemos quaisquer garantias referentes a todo o conteúdo do "
+                  "mesmo.",
+              iconData: Icons.close,
+              iconSize: 44.0,
+              textFontSize: 19.0,
             ),
             SizedBox(height: 16.0),
-            _buildParagraph(
-                text: "O uso do capacete é sempre recomendado , mesmo para quem não está escalando no momento, "
-                    "já que sempre há o risco de soltura de fragmentos vindo de cima.",
-                iconData: FontAwesomeIcons.hardHat
+            CustomInfoTile(
+              text: "O uso do capacete é sempre recomendado , mesmo para quem não está escalando no momento, "
+                  "já que sempre há o risco de soltura de fragmentos vindo de cima.",
+              iconData: FontAwesomeIcons.hardHat,
+              iconSize: 44.0,
+              textFontSize: 19.0,
             ),
           ],
         ),
@@ -74,25 +81,31 @@ class _IntroScreenState extends State<IntroScreen> {
         widgetDescription: Column(
           children: <Widget>[
             SizedBox(height: 16.0),
-            _buildParagraph(
-                text: "Procure seguir e revisar sempre todos os procedimentos de segurança "
-                    "para que os riscos sejam reduzidos.",
-                iconData: FontAwesomeIcons.thumbsUp
+            CustomInfoTile(
+              text: "Procure seguir e revisar sempre todos os procedimentos de segurança "
+                  "para que os riscos sejam reduzidos.",
+              iconData: FontAwesomeIcons.thumbsUp,
+              iconSize: 44.0,
+              textFontSize: 19.0,
             ),
             SizedBox(height: 16.0),
-            _buildParagraph(
-                text: "A sua segurança depende do seu próprio julgamento, "
-                    "baseado numa instrução competente, experiência e conhecimento da sua real "
-                    "habilidade em escalar (seu limite).",
-                iconData: FontAwesomeIcons.brain
+            CustomInfoTile(
+              text: "A sua segurança depende do seu próprio julgamento, "
+                  "baseado numa instrução competente, experiência e conhecimento da sua real "
+                  "habilidade em escalar (seu limite).",
+              iconData: FontAwesomeIcons.brain,
+              iconSize: 44.0,
+              textFontSize: 19.0,
             ),
             SizedBox(height: 16.0),
-            _buildParagraph(
-                text: "Este guia não é um substituto para um instrutor ou guia de escalada "
-                    "em rocha. Caso você não conheça ou possua dúvidas em relação às "
-                    "técnicas de segurança necessárias para realizar um escalada, procure "
-                    "um instrutor ou guia especializado.",
-                iconData: FontAwesomeIcons.questionCircle
+            CustomInfoTile(
+              text: "Este guia não é um substituto para um instrutor ou guia de escalada "
+                  "em rocha. Caso você não conheça ou possua dúvidas em relação às "
+                  "técnicas de segurança necessárias para realizar um escalada, procure "
+                  "um instrutor ou guia especializado.",
+              iconData: FontAwesomeIcons.questionCircle,
+              iconSize: 44.0,
+              textFontSize: 19.0,
             ),
           ],
         ),
@@ -160,31 +173,6 @@ class _IntroScreenState extends State<IntroScreen> {
       colorActiveDot: Colors.white,
       sizeDot: 13.0,
 
-    );
-  }
-
-  Widget _buildParagraph({String text, IconData iconData}){
-    return  Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Icon(
-          iconData,
-          size: 44.0,
-          color: Colors.white,
-        ),
-        SizedBox(width: 16.0),
-        Expanded(
-          child: Text(
-            text,
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 19.0,
-                fontStyle: FontStyle.italic,
-                fontFamily: 'Raleway'
-            ),
-          ),
-        )
-      ],
     );
   }
 }
