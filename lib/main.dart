@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Guia Arara',
       theme: ThemeData(
-        primaryColor: Colors.blue,
+        primaryColor: Color.fromRGBO(5, 117, 230, 1),
         scaffoldBackgroundColor: Color.fromRGBO(224, 229, 236, 1),
       ),
       home: IntroScreen()
