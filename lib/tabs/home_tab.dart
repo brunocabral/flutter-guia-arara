@@ -15,7 +15,7 @@ class HomeTab extends StatelessWidget {
                 backgroundColor: Colors.transparent,
                 elevation: 0.0,
                 flexibleSpace: FlexibleSpaceBar(
-                  title: const Text("Guia de Escalada Arara"),
+                  title: const Text("Guia de Escalada Arara 2019"),
                   centerTitle: true,
                 ),
               ),

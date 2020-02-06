@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:guia_arara/screens/home_screen.dart';
+import 'package:guia_arara/screens/intro_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,12 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Guia Arara 2019',
       theme: ThemeData(
         primaryColor: Colors.blue,
         scaffoldBackgroundColor: Color.fromRGBO(224, 229, 236, 1),
       ),
-      home: HomeScreen()
+      home: IntroScreen()
     );
   }
 }

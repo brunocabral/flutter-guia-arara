@@ -15,18 +15,18 @@ class CustomDrawer extends StatelessWidget {
         children: <Widget>[
           _buildDrawerBackground(),
           ListView(
-            padding: EdgeInsets.only(left: 32.0, top: 16.0),
+            padding: EdgeInsets.only(left: 24.0, top: 16.0),
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(bottom: 8.0),
+                margin: EdgeInsets.only(left: 0.0, bottom: 8.0),
                 padding: EdgeInsets.fromLTRB(0.0, 16.0, 16.0, 8.0),
                 height: 170.0,
-                child: Text("Guia de Escalada \nPedra da Arara \nMacambira-SE" ,
-                  style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
+                decoration: BoxDecoration(
+                    image: DecorationImage(image: AssetImage("images/misc/capa_texto2.png"),fit: BoxFit.cover)
                 ),
               ),
               Divider(),
-              DrawerTile(Icons.announcement, "Informações básicas", pageController, 0),
+              DrawerTile(Icons.announcement, "Orientações básicas", pageController, 0),
               DrawerTile(Icons.place, "Como Chegar", pageController, 1),
               DrawerTile(Icons.map, "Croqui do Setores", pageController, 2),
               DrawerTile(Icons.filter_9_plus, "Graduação", pageController, 3),
