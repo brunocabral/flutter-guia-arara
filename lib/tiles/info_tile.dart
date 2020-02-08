@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:guia_arara/screens/home_screen.dart';
 import 'package:guia_arara/screens/intro_screen.dart';
 import 'package:guia_arara/tabs/home_tab.dart';
 
@@ -10,8 +9,8 @@ class CustomInfoTile extends StatelessWidget {
 
   final String text;
   final IconData iconData;
-  double iconSize;
-  double textFontSize;
+  final double iconSize;
+  final double textFontSize;
 
   CustomInfoTile({@required this.text, @required this.iconData, this.iconSize, this.textFontSize});
 

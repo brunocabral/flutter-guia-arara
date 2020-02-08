@@ -4,6 +4,7 @@ import 'package:guia_arara/screens/home_screen.dart';
 import 'package:guia_arara/tiles/info_tile.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class IntroScreen extends StatefulWidget {
   @override
@@ -125,8 +126,11 @@ class _IntroScreenState extends State<IntroScreen> {
     );
   }
 
-  void onDonePress() {
-    ///TODO - Shared Preferences - não repetir tela depois da 1a vez
+  void onDonePress() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    //cria a flag da Intro Screen aqui
+    prefs.setBool('wasAlreadyLaunched', true);
+
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => HomeScreen()),
@@ -184,4 +188,5 @@ class _IntroScreenState extends State<IntroScreen> {
 
     );
   }
+
 }
