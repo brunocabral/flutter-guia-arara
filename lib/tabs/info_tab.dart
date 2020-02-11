@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:guia_arara/tiles/info_tile.dart';
 
-class HomeTab extends StatelessWidget {
+class InfoTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
