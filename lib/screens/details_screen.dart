@@ -140,6 +140,8 @@ class DetailsScreen extends StatelessWidget {
                     height: 1.2
                   ),
                 ),
+                Divider(),
+                Text("Descrição", textAlign: TextAlign.center,),
                 SizedBox(height: 8.0,),
                 Text(route.description ?? "Nenhuma descrição cadastrada",
                   style: TextStyle(
