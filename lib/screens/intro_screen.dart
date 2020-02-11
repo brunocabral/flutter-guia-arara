@@ -131,7 +131,7 @@ class _IntroScreenState extends State<IntroScreen> {
     //cria a flag da Intro Screen aqui
     prefs.setBool('wasAlreadyLaunched', true);
 
-    Navigator.push(
+    Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => HomeScreen()),
     );
