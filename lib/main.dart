@@ -34,11 +34,12 @@ class MyApp extends StatelessWidget {
       )
     );
   }
+
+  Future<bool> _wasAlreadyLaunched() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    //Retorna checando se existe flag no shared preferences
+    bool flag = prefs.get('wasAlreadyLaunched');
+    return flag;
+  }
 }
 
-Future<bool> _wasAlreadyLaunched() async {
-  SharedPreferences prefs = await SharedPreferences.getInstance();
-  //Retorna checando se existe flag no shared preferences
-  bool flag = prefs.get('wasAlreadyLaunched');
-  return flag;
-}
