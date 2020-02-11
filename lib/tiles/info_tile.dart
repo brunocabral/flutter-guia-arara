@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:guia_arara/screens/intro_screen.dart';
-import 'package:guia_arara/tabs/home_tab.dart';
+import 'package:guia_arara/tabs/info_tab.dart';
 
 
 ///Constrói parágrafos com ícones, são utilizados nas telas de introdução [IntroScreen]
-///e [HomeTab] que contem as orientações básicas.
+///e [InfoTab] que contem as orientações básicas.
 class CustomInfoTile extends StatelessWidget {
 
   final String text;

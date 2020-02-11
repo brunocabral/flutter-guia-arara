@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:guia_arara/tabs/about_tab.dart';
 import 'package:guia_arara/tabs/climb_map_tab.dart';
 import 'package:guia_arara/tabs/grade_tab.dart';
-import 'package:guia_arara/tabs/home_tab.dart';
+import 'package:guia_arara/tabs/info_tab.dart';
 import 'package:guia_arara/widgets/custom_drawer_widget.dart';
 import 'package:guia_arara/tabs/road_map_tab.dart';
 import 'package:guia_arara/tabs/sectors_tab.dart';
@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
       physics: NeverScrollableScrollPhysics(), //impede de scrollar pra pages do lado
       children: <Widget>[
         Scaffold(
-          body: HomeTab(),
+          body: InfoTab(),
           drawer: CustomDrawer(_pageController),
         ),
         Scaffold(
