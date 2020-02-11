@@ -21,6 +21,7 @@ class _MyAppState extends State<MyApp> {
       return MaterialApp(
         home: SplashScreen(
           seconds: 4,
+          backgroundColor: Colors.blue,
           navigateAfterSeconds: AfterSplash(), //para onde ir depois
           imageBackground: AssetImage("images/misc/foto.jpg"),
           image: Image.asset("images/misc/logo_capa.png"),
