@@ -17,9 +17,9 @@ class GridMenu extends StatelessWidget{
       child: GridView.count(
         crossAxisCount: 2,
         childAspectRatio: 1.0,
-        crossAxisSpacing: 16,
-        padding: EdgeInsets.only(left: 16, right: 16),
-        mainAxisSpacing: 16,
+        crossAxisSpacing: 32,
+        padding: EdgeInsets.only(left: 32, right: 32),
+        mainAxisSpacing: 24,
         children: _menuItems.map((data) {
           return MenuTile(
             color: color,
