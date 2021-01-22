@@ -7,7 +7,7 @@ class ClimbmapScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 2,
-        title: Text("Croqui"),
+        title: Text("Mapa Local"),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
