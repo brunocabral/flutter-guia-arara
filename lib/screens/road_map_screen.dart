@@ -24,6 +24,17 @@ class RoadmapScreen extends StatelessWidget {
               SizedBox(height: 16.0),
               Text("Seguir pista de asfalto e terra até a Fazenda Capitão."),
               SizedBox(height: 32.0),
+              Align(
+                  alignment: Alignment.center,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("(Toque no mapa para dar zoom) "),
+                      Icon(Icons.zoom_in)
+                    ],
+                  )
+              ),
+              SizedBox(height: 8.0,),
               Container(
                 decoration: _customBoxDecoration(),
                 height: 400,
@@ -34,15 +45,10 @@ class RoadmapScreen extends StatelessWidget {
                       minScale: PhotoViewComputedScale.contained * 1.1,
                       maxScale: PhotoViewComputedScale.contained * 2.5,
                       backgroundDecoration: BoxDecoration(
-                        color: Theme.of(context).scaffoldBackgroundColor,
+                        color: Colors.white,
                       ),
                       imageProvider: AssetImage("images/maps/estrada.png")),
                 ),
-              ),
-              SizedBox(height: 8.0,),
-              Align(
-                  alignment: Alignment.center,
-                  child: Text("(Toque no mapa para dar zoom)")
               ),
               SizedBox(height: 8.0,),
               Align(

@@ -21,6 +21,17 @@ class ClimbmapScreen extends StatelessWidget {
               Text("Nas duas travessias de rio, a altura da água varia normalmente "
                   "entre 20 ~ 60 cm de altura"),
               SizedBox(height: 32.0),
+              Align(
+                  alignment: Alignment.center,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("(Toque no mapa para dar zoom) "),
+                      Icon(Icons.zoom_in)
+                    ],
+                  )
+              ),
+              SizedBox(height: 8.0,),
               Container(
                 decoration: _customBoxDecoration(),
                 height: 400,
@@ -30,16 +41,12 @@ class ClimbmapScreen extends StatelessWidget {
                       initialScale: PhotoViewComputedScale.contained * 1,
                       minScale: PhotoViewComputedScale.contained * 1,
                       maxScale: PhotoViewComputedScale.contained * 2.5,
-                      backgroundDecoration: BoxDecoration(color: Theme.of(context).scaffoldBackgroundColor),
+                      backgroundDecoration: BoxDecoration(color: Colors.white),
                       imageProvider: AssetImage("images/maps/croqui.png")
                   ),
                 ),
               ),
               SizedBox(height: 8.0),
-              Align(
-                  alignment: Alignment.center,
-                  child: Text("(Toque no mapa para dar zoom)")
-              )
             ],
           ),
         ),
