@@ -1,29 +1,36 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class GradeTab extends StatelessWidget {
+class GradeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
-        height: 500,
-        padding: const EdgeInsets.symmetric(horizontal:16.0, vertical: 32.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            SizedBox(height: 16.0),
-            Text("Todas as vias esportivas estão graduadas na graduação brasileira e os "
-                "boulders na graduação de Hueco."),
-            SizedBox(height: 32.0),
-            Container(
-              alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
-              decoration: _customBoxDecoration(context),
-              height: 300,
-              width: 400,
-              child: _buildTable(context)
-            ),
-          ],
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 2,
+        title: Text("Graduação"),
+        centerTitle: true,
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          height: 500,
+          padding: const EdgeInsets.symmetric(horizontal:16.0, vertical: 32.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              SizedBox(height: 16.0),
+              Text("Todas as vias esportivas estão graduadas na graduação brasileira e os "
+                  "boulders na graduação de Hueco."),
+              SizedBox(height: 32.0),
+              Container(
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
+                  decoration: _customBoxDecoration(context),
+                  height: 300,
+                  width: 400,
+                  child: _buildTable(context)
+              ),
+            ],
+          ),
         ),
       ),
     );

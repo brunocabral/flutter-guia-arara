@@ -1,71 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:guia_arara/tabs/about_tab.dart';
-import 'package:guia_arara/tabs/climb_map_tab.dart';
-import 'package:guia_arara/tabs/grade_tab.dart';
-import 'package:guia_arara/tabs/info_tab.dart';
+import 'file:///F:/projetos_flutter/guia_arara/lib/screens/about_screen.dart';
+import 'file:///F:/projetos_flutter/guia_arara/lib/screens/climb_map_screen.dart';
+import 'file:///F:/projetos_flutter/guia_arara/lib/screens/grade_screen.dart';
+import 'file:///F:/projetos_flutter/guia_arara/lib/screens/info_screen.dart';
 import 'package:guia_arara/widgets/custom_drawer_widget.dart';
-import 'package:guia_arara/tabs/road_map_tab.dart';
-import 'package:guia_arara/tabs/sectors_tab.dart';
+import 'file:///F:/projetos_flutter/guia_arara/lib/screens/road_map_screen.dart';
+import 'file:///F:/projetos_flutter/guia_arara/lib/screens/sectors_screen.dart';
+import 'package:guia_arara/widgets/grid_menu_widget.dart';
 
 class HomeScreen extends StatelessWidget {
-  final _pageController = PageController(initialPage: 0);
 
   @override
   Widget build(BuildContext context) {
-    return PageView( //swipe detection and provides animation
-      controller: _pageController,
-      physics: NeverScrollableScrollPhysics(), //impede de scrollar pra pages do lado
-      children: <Widget>[
-        Scaffold(
-          body: InfoTab(),
-          drawer: CustomDrawer(_pageController),
-        ),
-        Scaffold(
-          appBar: AppBar(
-            elevation: 2,
-            title: Text("Como Chegar"),
-            centerTitle: true,
+    return Scaffold(
+      body: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.only(left: 16, right: 16),
+            child: Image.asset(
+              "images/misc/capa_texto.png",scale: 3.0,
+            ),
           ),
-          body: RoadmapTab(),
-          drawer: CustomDrawer(_pageController),
-        ),
-        Scaffold(
-          appBar: AppBar(
-            elevation: 2,
-            title: Text("Croqui"),
-            centerTitle: true,
-          ),
-          body: ClimbmapTab(),
-          drawer: CustomDrawer(_pageController),
-        ),
-        Scaffold(
-          appBar: AppBar(
-            elevation: 2,
-            title: Text("Graduação"),
-            centerTitle: true,
-          ),
-          body: GradeTab(),
-          drawer: CustomDrawer(_pageController),
-        ),
-        Scaffold(
-          appBar: AppBar(
-            elevation: 2,
-            title: Text("Setores"),
-            centerTitle: true,
-          ),
-          body: SectorsTab(),
-          drawer: CustomDrawer(_pageController),
-        ),
-        Scaffold(
-          appBar: AppBar(
-            elevation: 2,
-            title: Text("Sobre"),
-            centerTitle: true,
-          ),
-          body: AboutTab(),
-          drawer: CustomDrawer(_pageController),
-        ),
-      ],
+          GridMenu()
+        ],
+      ),
     );
   }
 }
