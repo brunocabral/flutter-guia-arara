@@ -4,15 +4,22 @@ import 'package:guia_arara/models/climbing_sector.dart';
 import 'package:guia_arara/screens/routes_screen.dart';
 import 'package:guia_arara/tiles/sector_tile.dart';
 
-class SectorsTab extends StatelessWidget {
+class SectorsScreen extends StatelessWidget {
 
   final ClimbingHelper helper = ClimbingHelper();
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-        padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0 ),
-        children: _buildSectorTiles()
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 2,
+        title: Text("Setores"),
+        centerTitle: true,
+      ),
+      body: ListView(
+          padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0 ),
+          children: _buildSectorTiles()
+      ),
     );
   }
 

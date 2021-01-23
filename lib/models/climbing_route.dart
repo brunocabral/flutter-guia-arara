@@ -3,7 +3,7 @@ import 'package:guia_arara/models/climbing_sector.dart';
 ///Classe que representa uma Via de escalada.
 ///Cada via é identificada por um [id] e possui um [name] e um [grade](dificuldade)
 ///e uma [img] para identificação visual da linha.
-///Toda via pertence a um [ClimbingSector].
+///Toda via pertence a um [ClimbingSector] (Setor de escalada).
 class ClimbingRoute {
 
   static const boulderType = "Boulder";

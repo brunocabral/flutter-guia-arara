@@ -45,7 +45,6 @@ class ClimbingHelper {
 
   List<ClimbingRoute> _createClimbingRoutes(List<ClimbingSector> sectors) {
     List<ClimbingRoute> vias = List<ClimbingRoute>();
-
     //######### Vias do Juliano Magalhães ######################################
     vias.add(
       ClimbingRoute(id: "01",
@@ -169,7 +168,7 @@ class ClimbingHelper {
         grade: "6º",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
         imgPath: dirImagesNegativos + "negativos.jpg",
-        description: "Sequência de batentes e posiconamentos com o calcanhar"
+        description: "Sequência de batentes e posicionamentos com o calcanhar"
       )
     );
     vias.add(
