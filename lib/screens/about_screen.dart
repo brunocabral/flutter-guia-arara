@@ -62,6 +62,16 @@ class AboutScreen extends StatelessWidget {
                   ],
                 ),
                 onTap: () => _launchURL("http://escalacaju.blogspot.com/"),
+              ),
+              Text("Gostou do app? Contribua com um cafézinho :)", style: TextStyle(fontWeight: FontWeight.w600)),
+              Padding(
+                padding: EdgeInsets.all(16.0),
+                child: GestureDetector(
+                  child: Image.asset(
+                    "images/misc/apoiase.png",scale: 4.0,
+                  ),
+                  onTap: () => _launchURL("https://apoia.se/"),
+                ),
               )
             ],
           ),
