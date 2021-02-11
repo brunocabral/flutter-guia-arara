@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'file:///F:/projetos_flutter/guia_arara/lib/screens/about_screen.dart';
-import 'file:///F:/projetos_flutter/guia_arara/lib/screens/climb_map_screen.dart';
-import 'file:///F:/projetos_flutter/guia_arara/lib/screens/grade_screen.dart';
-import 'file:///F:/projetos_flutter/guia_arara/lib/screens/info_screen.dart';
-import 'file:///F:/projetos_flutter/guia_arara/lib/screens/road_map_screen.dart';
-import 'file:///F:/projetos_flutter/guia_arara/lib/screens/sectors_screen.dart';
+
 import 'package:guia_arara/widgets/grid_menu_widget.dart';
 
 class HomeScreen extends StatelessWidget {
