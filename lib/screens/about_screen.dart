@@ -70,7 +70,7 @@ class AboutScreen extends StatelessWidget {
                   child: Image.asset(
                     "images/misc/apoiase.png",scale: 4.0,
                   ),
-                  onTap: () => _launchURL("https://apoia.se/"),
+                  onTap: () => _launchURL("https://apoia.se/appguiadaarara"),
                 ),
               )
             ],
