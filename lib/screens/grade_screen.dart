@@ -18,8 +18,8 @@ class GradeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               SizedBox(height: 16.0),
-              Text("Todas as vias esportivas estão graduadas na graduação brasileira e os "
-                  "boulders na graduação de Hueco."),
+              Text("Todas as vias esportivas estão graduadas na graduação brasileira e as vias "
+                  "de boulder na graduação Hueco."),
               SizedBox(height: 32.0),
               Container(
                   alignment: Alignment.center,

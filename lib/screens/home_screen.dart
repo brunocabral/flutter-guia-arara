@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:guia_arara/widgets/grid_menu_widget.dart';
 
 class HomeScreen extends StatelessWidget {
