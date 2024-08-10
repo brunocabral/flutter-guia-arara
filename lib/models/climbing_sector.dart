@@ -14,7 +14,7 @@ class ClimbingSector {
   String id;
   String name;
 
-  ClimbingSector({this.id, this.name});
+  ClimbingSector({required this.id, required this.name});
 
   @override
   String toString() {
