@@ -23,14 +23,14 @@ class ClimbingRoute {
   ClimbingSector sector;
 
   ClimbingRoute({
-    this.id,
-    this.name,
-    this.type,
-    this.grade,
-    this.description,
-    this.warningNote,
-    this.imgPath,
-    this.sector
+    required this.id,
+    required this.name,
+    required this.type,
+    required this.grade,
+    required this.description,
+    required this.warningNote,
+    required this.imgPath,
+    required this.sector
   });
 
   @override
