@@ -33,7 +33,7 @@ class GridMenu extends StatelessWidget{
   }
 
   List<Item> _buildItems(){
-    List<Item> items = List<Item>();
+    List<Item> items = [];
     items.add(
         Item(title: "Orientações Básicas", icon: Icons.announcement, route: InfoScreen())
     );
@@ -57,12 +57,10 @@ class GridMenu extends StatelessWidget{
 
 }
 
-
-
 class Item {
   String title;
   IconData icon;
   Widget route;
 
-  Item({this.title, this.icon, this.route});
+  Item({ required this.title, required this.icon, required this.route});
 }
