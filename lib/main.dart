@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:guia_arara/screens/home_screen.dart';
 import 'package:guia_arara/screens/intro_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:splashscreen/splashscreen.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 void main() async{
   runApp(MyApp());
@@ -19,15 +19,19 @@ class _MyAppState extends State<MyApp> {
     Widget build(BuildContext context) {
       ///'Fake' Splashscreen, widget do package 'splashscreen'
       return MaterialApp(
-        home: SplashScreen(
-          seconds: 4,
-          backgroundColor: Colors.blue,
-          navigateAfterSeconds: AfterSplash(), //para onde ir depois
-          imageBackground: AssetImage("images/misc/foto.jpg"),
-          image: Image.asset("images/misc/logo_capa.png"),
-          photoSize: 80,
-          loaderColor: Colors.blueAccent,
-        ),
+        // home: SplashScreen(
+        //   seconds: 4,
+        //   backgroundColor: Colors.blue,
+        //   navigateAfterSeconds: AfterSplash(), //para onde ir depois
+        //   imageBackground: AssetImage("images/misc/foto.jpg"),
+        //   image: Image.asset("images/misc/logo_capa.png"),
+        //   photoSize: 80,
+        //   loaderColor: Colors.blueAccent,
+        // ),
+        home: AnimatedSplashScreen(
+            splash: Image.asset("images/misc/logo_capa.png"),
+            nextScreen: AfterSplash()
+        )
       );
   }
 }
