@@ -51,9 +51,7 @@ class AfterSplash extends StatelessWidget {
           builder: (context, snapshot) {
             Widget home = IntroScreen();
             if (snapshot.hasData) {
-              if (snapshot.data) {
-                home = HomeScreen();
-              }
+              home = HomeScreen();
             }
             return home;
           },
@@ -65,7 +63,7 @@ class AfterSplash extends StatelessWidget {
   ///case o app já tenha sido aberto alguma vez
   Future<bool> _wasAlreadyLaunched() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool flag = prefs.get('wasAlreadyLaunched');
+    bool flag = prefs.get('wasAlreadyLaunched') as bool;
     return flag;
   }
 }
