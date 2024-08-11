@@ -24,7 +24,7 @@ class SectorsScreen extends StatelessWidget {
   }
 
   List<Widget> _buildSectorTiles(){
-    List<Widget> tiles = List<Widget>();
+    List<Widget> tiles = [];
 
     for (ClimbingSector setor in helper.setores) {
       tiles.add(SectorTile(
