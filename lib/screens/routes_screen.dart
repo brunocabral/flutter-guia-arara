@@ -25,7 +25,7 @@ class RoutesScreen extends StatelessWidget {
   }
 
   List<Widget> _buildRouteTiles(String sectorName) {
-    List<Widget> tiles = List<Widget>();
+    List<Widget> tiles = [];
     
     List<ClimbingRoute> routes = helper.getAllRoutesBySector(sectorName);
     
