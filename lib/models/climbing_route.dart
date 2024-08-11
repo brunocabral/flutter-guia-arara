@@ -14,10 +14,10 @@ class ClimbingRoute {
   String name;
   String type;
   String grade;
-  String description;
+  String? description;
 
   ///Descrição adicional que necessite informar sobre a via
-  String warningNote;
+  String? warningNote;
 
   String imgPath;
   ClimbingSector sector;
@@ -27,8 +27,8 @@ class ClimbingRoute {
     required this.name,
     required this.type,
     required this.grade,
-    required this.description,
-    required this.warningNote,
+    this.description,
+    this.warningNote,
     required this.imgPath,
     required this.sector
   });

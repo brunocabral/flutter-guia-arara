@@ -13,8 +13,8 @@ class ClimbingHelper {
   static const String dirImagesDrone = "images/setores/drone/";
   static const String dirImagesIsoladas= "images/setores/isoladas/";
 
-  List<ClimbingSector> setores;
-  List<ClimbingRoute> vias;
+  List<ClimbingSector> setores = List<ClimbingSector>.empty(growable: true);
+  List<ClimbingRoute> vias =List<ClimbingRoute>.empty(growable: true);
 
   ClimbingHelper(){
     setores = _createClimbingSectors();
@@ -31,7 +31,8 @@ class ClimbingHelper {
   }
 
   List<ClimbingSector> _createClimbingSectors() {
-    List<ClimbingSector> sectors = List<ClimbingSector>();
+    List<ClimbingSector> sectors = List<ClimbingSector>.empty(growable: true);
+    //sectors = List<ClimbingSector>();
     sectors.add(ClimbingSector(id: "01", name: ClimbingSector.setorJuliano));
     sectors.add(ClimbingSector(id: "02", name: ClimbingSector.setorBoulders));
     sectors.add(ClimbingSector(id: "03", name: ClimbingSector.setorNegativos));
@@ -44,7 +45,7 @@ class ClimbingHelper {
   }
 
   List<ClimbingRoute> _createClimbingRoutes(List<ClimbingSector> sectors) {
-    List<ClimbingRoute> vias = List<ClimbingRoute>();
+    List<ClimbingRoute> vias = List<ClimbingRoute>.empty(growable: true);
     //######### Vias do Juliano Magalhães ######################################
     vias.add(
       ClimbingRoute(id: "01",
