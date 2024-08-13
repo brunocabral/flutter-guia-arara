@@ -65,7 +65,7 @@ class DetailsScreen extends StatelessWidget {
   }
 
   ///Carrega imagem da via
-  AssetImage _getImage(String imgPath) {
+  AssetImage _getImage(String? imgPath) {
     AssetImage img;
     AssetImage placeholderImg = AssetImage("images/misc/placeholder.png");
     try {

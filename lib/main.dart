@@ -49,11 +49,11 @@ class AfterSplash extends StatelessWidget {
         home: FutureBuilder<bool>(
           future: _wasAlreadyLaunched(),
           builder: (context, snapshot) {
-            Widget home = IntroScreen();
-            if (snapshot.hasData) {
-              home = HomeScreen();
-            }
-            return home;
+            // Widget home = IntroScreen();
+            // if (snapshot.hasData) {
+            //   home = HomeScreen();
+            // }
+            return HomeScreen();
           },
         )
     );
