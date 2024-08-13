@@ -40,7 +40,7 @@ if (keystorePropertiesFile.exists()) {
 android {
     namespace "br.com.mcabral.guia_arara"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "26.1.10909125"
     //compileSdkVersion 33
 
     compileOptions {
