@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+final Uri _urlInstagram = Uri.parse('https://www.instagram.com/escalacaju/');
+final Uri _urlBlog = Uri.parse('http://escalacaju.blogspot.com/');
+
 class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -51,7 +54,7 @@ class AboutScreen extends StatelessWidget {
                     Icon(Icons.launch, size: 16,)
                   ],
                 ),
-                onTap: () => _launchURL("https://www.instagram.com/escalacaju/"),
+                onTap: () => _launchURL(_urlInstagram),
               ),
               ListTile(
                 title: Row(
@@ -60,7 +63,7 @@ class AboutScreen extends StatelessWidget {
                     Icon(Icons.launch, size: 16,)
                   ],
                 ),
-                onTap: () => _launchURL("http://escalacaju.blogspot.com/"),
+                onTap: () => _launchURL(_urlBlog),
               ),
               // Text("Gostou do app? Contribua com um cafézinho :)", style: TextStyle(fontWeight: FontWeight.w600)),
               // Padding(
@@ -81,11 +84,9 @@ class AboutScreen extends StatelessWidget {
   }
 
   ///Abre url externa no navegador
-  _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Não foi possível acessar: $url';
+  Future<void> _launchURL(Uri url) async {
+    if (!await launchUrl(url)) {
+      throw Exception('Não foi possível acessar $url');
     }
   }
 
