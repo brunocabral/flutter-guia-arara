@@ -45,7 +45,8 @@ class RoadmapScreen extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(16.0),
                   child: PhotoView(
-                      initialScale: PhotoViewComputedScale.contained * 1.1,
+                      basePosition: Alignment(-.5, 1),
+                      initialScale: PhotoViewComputedScale.contained * 1.0,
                       minScale: PhotoViewComputedScale.contained * 1.1,
                       maxScale: PhotoViewComputedScale.contained * 2.5,
                       backgroundDecoration: BoxDecoration(
