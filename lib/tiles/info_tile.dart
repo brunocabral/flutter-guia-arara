@@ -22,14 +22,14 @@ class CustomInfoTile extends StatelessWidget {
         Icon(
           iconData,
           size: iconSize ?? 20.0,
-          color: Colors.white,
+          color: Colors.black,
         ),
         SizedBox(width: 8.0),
         Expanded(
           child: Text(
             text,
             style: TextStyle(
-                color: Colors.white,
+                color: Colors.black,
                 fontSize: textFontSize ?? 18.0,
                 fontStyle: FontStyle.italic,
                 fontFamily: 'Raleway'

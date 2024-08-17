@@ -15,19 +15,10 @@ class InfoScreen extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Container(
-            color: Theme.of(context).primaryColor,
+            color: Colors.white24,
             child: SingleChildScrollView(
               child: Container(
                 padding: EdgeInsets.all(20.0),
-                decoration: BoxDecoration(
-                    color: Colors.black87,
-                    image: DecorationImage(
-                        alignment: Alignment.topCenter,
-                        image: AssetImage("images/misc/foto.jpg"),
-                        colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.3), BlendMode.dstATop),
-                        fit: BoxFit.cover
-                    )
-                ),
                 child: Column(
                   children: <Widget>[
                     SizedBox(
@@ -91,7 +82,7 @@ class InfoScreen extends StatelessWidget {
                           fontFamily: "RobotoMono",
                           fontWeight: FontWeight.bold,
                           backgroundColor: Colors.green,
-                          color: Colors.white
+                          color: Colors.black87
                       ),
                     ),
                     SizedBox(height: 16.0),
