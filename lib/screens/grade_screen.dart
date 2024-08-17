@@ -11,7 +11,7 @@ class GradeScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          height: 500,
+          height: 600,
           padding: const EdgeInsets.symmetric(horizontal:16.0, vertical: 32.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,7 +24,7 @@ class GradeScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   padding: EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
                   decoration: _customBoxDecoration(context),
-                  height: 300,
+                  height: 400,
                   width: 400,
                   child: _buildTable(context)
               ),
