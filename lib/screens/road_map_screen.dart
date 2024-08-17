@@ -3,6 +3,10 @@ import 'package:photo_view/photo_view.dart';
 import 'package:url_launcher/url_launcher.dart';
 //import 'package:photo_view/photo_view.dart';
 
+final String lat = "-10.709755";
+final String lng = "-37.615849";
+final Uri urlGoogleMaps = Uri.parse("https://www.google.com/maps/search/?api=1&query=$lat,$lng");
+
 class RoadmapScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -60,35 +64,22 @@ class RoadmapScreen extends StatelessWidget {
                     backgroundColor: Colors.white,
                     elevation: 1,
                   ),
-                  onTap: () async {
-                    final String lat = "-10.709755";
-                    final String lng = "-37.615849";
-                    final String googleMapsUrl = "https://www.google.com/maps/search/?api=1&query=$lat,$lng";
-                    //For iOS
-//                final String appleMapsUrl = "https://maps.apple.com/?q=$lat,$lng";
-
-                    if (await canLaunch(googleMapsUrl)) {
-                      await launch(googleMapsUrl);
-                    }
-                    else {
-                      throw "Couldn't launch URL $googleMapsUrl";
-                    }
-
-                    //For iOS
-//                if (await canLaunch(appleMapsUrl)) {
-//                  await launch(appleMapsUrl, forceSafariVC: false);
-//                } else {
-//                  throw "Couldn't launch URL";
-//                }
-                  },
+                  onTap: () => _launchURL(urlGoogleMaps),
                 ),
               )
-
             ],
           ),
         ),
       ),
     );
+  }
+
+  ///Abre url externa no navegador
+///todo: função redundante(também declarada na about_screen) - centralizar
+  Future<void> _launchURL(Uri url) async {
+    if (!await launchUrl(url)) {
+      throw Exception('Não foi possível acessar $url');
+    }
   }
 
   ///Neumorphism style decoration
