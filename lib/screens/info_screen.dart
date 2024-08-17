@@ -131,6 +131,24 @@ class InfoScreen extends StatelessWidget {
                             "para entrar e aceite suas condições.",
                         iconData: FontAwesomeIcons.handshake
                     ),
+                    SizedBox(height: 16.0),
+                    Align(
+                      alignment: Alignment.center,
+                      child: ElevatedButton(
+                        onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          child: const Text(
+                            "Entendi!",
+                            style: TextStyle(
+                              color: Colors.white
+                            ),
+                          ),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Color.fromRGBO(5, 117, 230, 1)
+                        )
+                      )
+                    )
                   ],
                 ),
               ),
