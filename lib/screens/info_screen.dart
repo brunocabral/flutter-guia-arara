@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:guia_arara/tiles/info_tile.dart';
@@ -51,7 +51,7 @@ class InfoScreen extends StatelessWidget {
                     CustomInfoTile(
                         text: "O uso do capacete é sempre recomendado , mesmo para quem não está escalando no momento, "
                             "já que sempre há o risco de soltura de fragmentos vindo de cima.",
-                        iconData: FontAwesomeIcons.hardHat
+                        iconData: FontAwesomeIcons.helmetSafety
                     ),
                     SizedBox(height: 16.0),
                     CustomInfoTile(
@@ -72,7 +72,7 @@ class InfoScreen extends StatelessWidget {
                             "em rocha. Caso você não conheça ou possua dúvidas em relação às "
                             "técnicas de segurança necessárias para realizar um escalada, procure "
                             "um instrutor ou guia especializado.",
-                        iconData: FontAwesomeIcons.questionCircle
+                        iconData: FontAwesomeIcons.circleQuestion
                     ),
                     SizedBox(height: 16.0),
                     Text(
@@ -88,7 +88,7 @@ class InfoScreen extends StatelessWidget {
                     SizedBox(height: 16.0),
                     CustomInfoTile(
                         text: "Mantenha trilhas e montanhas limpas, trazendo sempre seu lixo de volta.",
-                        iconData: FontAwesomeIcons.trashAlt
+                        iconData: FontAwesomeIcons.trashCan
                     ),
                     SizedBox(height: 16.0),
                     CustomInfoTile(
