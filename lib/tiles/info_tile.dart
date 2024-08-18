@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:guia_arara/screens/intro_screen.dart';
-
-
+//import 'package:guia_arara/screens/intro_screen.dart';
 
 ///Constrói parágrafos com ícones, são utilizados nas telas de introdução [IntroScreen]
 ///e [InfoTab] que contem as orientações básicas.
