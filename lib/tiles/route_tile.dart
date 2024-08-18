@@ -26,13 +26,13 @@ class RouteTile extends StatelessWidget {
             child: Image(image:_getImage(climbingRoute.imgPath),),
           ),
           title: Text(
-            climbingRoute.name ?? "Via sem nome",
+            climbingRoute.name,
             style: TextStyle(
               fontSize: 18.0
             ),
           ),
           subtitle: Text(
-            climbingRoute.type ?? "-",
+            climbingRoute.type,
             style: TextStyle(
               color: _getRouteColorByType(climbingRoute.type)
             ),

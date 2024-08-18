@@ -89,7 +89,7 @@ class DetailsScreen extends StatelessWidget {
                   padding: EdgeInsets.all(8),
                   decoration: _customBoxDecoration(context),
                   child: Text(
-                    route.name ?? "Via sem nome",
+                    route.name,
                     style: TextStyle(
                       fontSize: 22.0,
                       color: Colors.black
