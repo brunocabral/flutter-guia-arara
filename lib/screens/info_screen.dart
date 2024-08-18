@@ -22,8 +22,8 @@ class InfoScreen extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     SizedBox(
-                        height: 320,
-                        child: Image(image: AssetImage("images/misc/capa_texto.png"),fit: BoxFit.scaleDown,)),
+                        height: 240,
+                        child: Image(image: AssetImage("images/misc/capa_detail.png"),fit: BoxFit.scaleDown,)),
                     Text(
                       "Segurança",
                       style: TextStyle(
