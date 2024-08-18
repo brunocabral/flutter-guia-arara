@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:guia_arara/screens/home_screen.dart';
-import 'package:guia_arara/screens/intro_screen.dart';
+//import 'package:guia_arara/screens/intro_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 
@@ -29,7 +29,8 @@ class _MyAppState extends State<MyApp> {
         //   loaderColor: Colors.blueAccent,
         // ),
         home: AnimatedSplashScreen(
-            splash: Image.asset("images/misc/logo_capa.png"),
+            splash: "images/misc/logo_capa.png",
+            splashTransition: SplashTransition.fadeTransition,
             nextScreen: AfterSplash()
         )
       );
