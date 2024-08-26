@@ -37,7 +37,7 @@ class SectorTile extends StatelessWidget {
               Text(
                 climbingSector.id,
                 style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 16,
                     fontWeight: FontWeight.w400
                 ),
               ),
