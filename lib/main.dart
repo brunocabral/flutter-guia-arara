@@ -1,11 +1,15 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:guia_arara/screens/home_screen.dart';
 //import 'package:guia_arara/screens/intro_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 
 void main() async{
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp
+  ]);
   runApp(MyApp());
 }
 
