@@ -44,7 +44,7 @@ class DetailsScreen extends StatelessWidget {
             alignment: Alignment.center,
             child: Container(
               height: _circleSize, width: _circleSize,
-              decoration: new BoxDecoration(
+              decoration: BoxDecoration(
                 border: Border.all(color: Theme.of(context).scaffoldBackgroundColor, width: 10),
                 shape: BoxShape.circle,
                 color: Colors.white,
