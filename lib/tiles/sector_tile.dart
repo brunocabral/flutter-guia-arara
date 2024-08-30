@@ -17,12 +17,10 @@ class SectorTile extends StatelessWidget {
       child: InkWell(
         splashColor: Colors.blueAccent,
         onTap: (){
-          if (pageRoute != null) {
-            Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => pageRoute)
-            );
-          }
-        },
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => pageRoute)
+          );
+                },
         child: ListTile(
           leading: Column(
             mainAxisAlignment: MainAxisAlignment.center,
