@@ -12,7 +12,7 @@ class GridMenu extends StatelessWidget{
   Widget build(BuildContext context) {
     var color = Colors.white;
 
-    List<Item> _menuItems = _buildItems();
+    List<Item> menuItems = _buildItems();
     return Flexible(
       child: GridView.count(
         crossAxisCount: 2,
@@ -20,7 +20,7 @@ class GridMenu extends StatelessWidget{
         crossAxisSpacing: 32,
         padding: EdgeInsets.only(left: 32, right: 32),
         mainAxisSpacing: 24,
-        children: _menuItems.map((data) {
+        children: menuItems.map((data) {
           return MenuTile(
             color: color,
             iconData: data.icon,
