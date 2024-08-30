@@ -14,6 +14,8 @@ void main() async{
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -42,6 +44,8 @@ class _MyAppState extends State<MyApp> {
 }
 
 class AfterSplash extends StatelessWidget {
+  const AfterSplash({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

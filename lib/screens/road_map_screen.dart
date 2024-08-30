@@ -8,6 +8,8 @@ final String lng = "-37.615849";
 final Uri urlGoogleMaps = Uri.parse("https://www.google.com/maps/search/?api=1&query=$lat,$lng");
 
 class RoadmapScreen extends StatelessWidget {
+  const RoadmapScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

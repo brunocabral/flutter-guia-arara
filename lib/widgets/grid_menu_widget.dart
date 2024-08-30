@@ -8,6 +8,8 @@ import 'package:guia_arara/screens/sectors_screen.dart';
 import 'package:guia_arara/tiles/menu_tile.dart';
 
 class GridMenu extends StatelessWidget{
+  const GridMenu({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     var color = Colors.white;

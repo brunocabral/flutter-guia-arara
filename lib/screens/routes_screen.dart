@@ -8,7 +8,7 @@ class RoutesScreen extends StatelessWidget {
   final ClimbingHelper helper;
   final String name;
 
-  const RoutesScreen(this.helper, this.name);
+  const RoutesScreen(this.helper, this.name, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

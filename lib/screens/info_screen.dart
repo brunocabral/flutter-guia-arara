@@ -4,6 +4,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:guia_arara/tiles/info_tile.dart';
 
 class InfoScreen extends StatelessWidget {
+  const InfoScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

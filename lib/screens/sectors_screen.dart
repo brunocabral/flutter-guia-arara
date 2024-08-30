@@ -8,6 +8,8 @@ class SectorsScreen extends StatelessWidget {
 
   final ClimbingHelper helper = ClimbingHelper();
 
+  SectorsScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

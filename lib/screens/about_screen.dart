@@ -5,6 +5,8 @@ final Uri _urlInstagram = Uri.parse('https://www.instagram.com/escalacaju/');
 final Uri _urlBlog = Uri.parse('http://escalacaju.blogspot.com/');
 
 class AboutScreen extends StatelessWidget {
+  const AboutScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

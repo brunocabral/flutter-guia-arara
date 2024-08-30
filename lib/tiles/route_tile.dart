@@ -7,7 +7,7 @@ class RouteTile extends StatelessWidget {
 
   final ClimbingRoute climbingRoute;
 
-  const RouteTile({required this.climbingRoute});
+  const RouteTile({Key? key, required this.climbingRoute}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -10,7 +10,7 @@ class DetailsScreen extends StatelessWidget {
 
   final double _circleSize =  80;
 
-  const DetailsScreen(this.route);
+  const DetailsScreen(this.route, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

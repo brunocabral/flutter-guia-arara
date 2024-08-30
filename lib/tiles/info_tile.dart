@@ -10,7 +10,7 @@ class CustomInfoTile extends StatelessWidget {
   final double? iconSize;
   final double? textFontSize;
 
-  const CustomInfoTile({required this.text, required this.iconData, this.iconSize, this.textFontSize});
+  const CustomInfoTile({Key? key, required this.text, required this.iconData, this.iconSize, this.textFontSize}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
