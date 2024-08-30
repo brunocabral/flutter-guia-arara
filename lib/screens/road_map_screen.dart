@@ -92,18 +92,18 @@ class RoadmapScreen extends StatelessWidget {
         color: Colors.white24, //borda interna
         width: 0.8,
       ),
-      boxShadow: [
-        const BoxShadow(
+      boxShadow: const [
+        BoxShadow(
             color: Color.fromRGBO(55, 84, 170, 0.05),
             offset: Offset(30, 30),
             blurRadius: 8.0),
         //upper light shadow
-        const BoxShadow(
+        BoxShadow(
             color: Color.fromRGBO(255, 255, 255, 0.6),
             offset: Offset(-9, -9),
             blurRadius: 8.0),
         //bottom darkshadow
-        const BoxShadow(
+        BoxShadow(
             color: Color.fromRGBO(163, 177, 198, 0.2),
             offset: Offset(9, 9),
             blurRadius: 12.0),

@@ -179,19 +179,19 @@ class DetailsScreen extends StatelessWidget {
           color: Colors.white30, //borda interna
           width: 0.5,
         ),
-        boxShadow: [
+        boxShadow: const [
           //bottom wide subtle dark shadow
-          const BoxShadow(
+          BoxShadow(
               color: Color.fromRGBO(55, 84, 170, 0.05),
               offset: Offset(30, 30),
               blurRadius: 8.0),
           //upper light shadow
-          const BoxShadow(
+          BoxShadow(
               color: Color.fromRGBO(255, 255, 255, 0.6),
               offset: Offset(-5, -5),
               blurRadius: 8.0),
           //bottom dark shadow
-          const BoxShadow(
+          BoxShadow(
               color: Color.fromRGBO(163, 177, 198, 0.2),
               offset: Offset(9, 9),
               blurRadius: 12.0),
