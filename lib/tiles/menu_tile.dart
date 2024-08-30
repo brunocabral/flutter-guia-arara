@@ -7,7 +7,7 @@ class MenuTile extends StatelessWidget {
   final Color color;
   final Widget route;
 
-  MenuTile({required this.title, required this.iconData, required this.color, required this.route});
+  const MenuTile({required this.title, required this.iconData, required this.color, required this.route});
 
   @override
   Widget build(BuildContext context) {

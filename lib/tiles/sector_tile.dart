@@ -9,7 +9,7 @@ class SectorTile extends StatelessWidget {
   ///Tela que irá ser redirecionada no evento onTap()
   final Widget pageRoute;
 
-  SectorTile({required this.climbingSector, required this.pageRoute});
+  const SectorTile({required this.climbingSector, required this.pageRoute});
 
   @override
   Widget build(BuildContext context) {
