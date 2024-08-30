@@ -53,7 +53,7 @@ class ClimbingHelper {
         type: ClimbingRoute.boulderType,
         grade: "V1",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano1.jpg",
+        imgPath: "${dirImagesJuliano}juliano1.jpg",
         description: "Linha com 3 movimentos e finalizando com um bote. "
             "\nExcelente exercício de bote para os iniciantes."
       )
@@ -65,7 +65,7 @@ class ClimbingHelper {
         type: ClimbingRoute.boulderType,
         grade: "V3",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano1.jpg",
+        imgPath: "${dirImagesJuliano}juliano1.jpg",
         description: "Sua saída inicia em um reglete partindo para mais um reglete, finalizando com um bote."
       )
     );
@@ -76,7 +76,7 @@ class ClimbingHelper {
         type: ClimbingRoute.boulderType,
         grade: "Projeto",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano1.jpg"
+        imgPath: "${dirImagesJuliano}juliano1.jpg"
       )
     );
     vias.add(
@@ -86,7 +86,7 @@ class ClimbingHelper {
         type: ClimbingRoute.boulderType,
         grade:"Projeto",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano1.jpg"
+        imgPath: "${dirImagesJuliano}juliano1.jpg"
       )
     );
     vias.add(
@@ -96,7 +96,7 @@ class ClimbingHelper {
         type: ClimbingRoute.boulderType,
         grade: "Projeto",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano2.jpg"
+        imgPath: "${dirImagesJuliano}juliano2.jpg"
       )
     );
     vias.add(
@@ -106,7 +106,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "5º",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano2.jpg",
+        imgPath: "${dirImagesJuliano}juliano2.jpg",
         description: "Via de posicionamento de pés e leve negatividade. Ótima via para iniciantes.",
       )
     );
@@ -117,7 +117,7 @@ class ClimbingHelper {
         type: ClimbingRoute.boulderType,
         grade: "Projeto",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano2.jpg"
+        imgPath: "${dirImagesJuliano}juliano2.jpg"
       )
     );
     vias.add(
@@ -127,7 +127,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7b",
         sector: _getSetorByName(ClimbingSector.setorJuliano),
-        imgPath: dirImagesJuliano + "juliano2.jpg",
+        imgPath: "${dirImagesJuliano}juliano2.jpg",
         description: "Via identificada pela frase anônima escrita na base da via. Saída relativamente dura e depois "
               "segue por uma fenda horizontal."
       )
@@ -143,7 +143,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "8ºA",
         sector: _getSetorByName(ClimbingSector.setorBoulders),
-        imgPath: dirImagesBoulders + "sacaninha-desejo.jpg",
+        imgPath: "${dirImagesBoulders}sacaninha-desejo.jpg",
         description: "Via com movimentos “boulderísticos”. Ao final, o bote valoriza aqueles que guiarem."
       )
     );
@@ -154,7 +154,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "5º Sup",
         sector: _getSetorByName(ClimbingSector.setorBoulders),
-        imgPath: dirImagesBoulders + "sacaninha-desejo.jpg",
+        imgPath: "${dirImagesBoulders}sacaninha-desejo.jpg",
         description: "O nome diz tudo. Linha inicialmente fácil que apresenta uma pegada técnica ao final."
       )
     );
@@ -168,7 +168,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "6º",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Sequência de batentes e posicionamentos com o calcanhar"
       )
     );
@@ -179,7 +179,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "6º",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Sua saída inicia em um reglete partindo para mais um reglete, finalizando com um bote."
       )
     );
@@ -190,7 +190,7 @@ class ClimbingHelper {
         type: ClimbingRoute.boulderType,
         grade: "V6",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Ela está entre a Arara Voadora e a da Canela. Sua saída exige força. "
             "\nSeus movimentos são alongados e corajosos. "
             "\nÉ um excelente desafio"
@@ -203,7 +203,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "4º",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Via perfeita para iniciantes treinarem Top Rope e iniciarem nas vias guiadas."
       )
     );
@@ -214,7 +214,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "6º",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Linha que se inicia em um negativo que exige domínio para entrada na parede. "
             "\nDepois, segue por boas agarras, finalizando num bote."
       )
@@ -226,7 +226,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "8º",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Via de difícil leitura. Possui movimentos alongados e de força logo no negativo da saída.",
         warningNote: "Saia utilizando as duas proteções fixas do início para evitar o fator 2 e choques "
           "entre o escalador e o segurança em caso de queda."
@@ -239,7 +239,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7ºb",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Via com saída técnica. Depois segue por sequência de agarras boas. "
             "\nEsta via é bem completa, pois possui passadas de equilíbrio, regletes, batentes, pinça e bote."
       )
@@ -251,7 +251,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "8ºa",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Linha óbvia com uma sequência de agarras grandes e médias. "
             "\nExcelente linha para ser feita à vista."
       )
@@ -263,7 +263,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "8ºb",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Uma das linhas mais interessantes da Arara. "
             "\nFica localizada em um tipo de gruta, sua saída se dá do fundo e seguindo por uma laca de teto gigante com boas pegas."
             "\nApós, realiza-se a virada para o negativo, seguindo por agarras e batentes até o final.",
@@ -279,7 +279,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "8ºb",
         sector: _getSetorByName(ClimbingSector.setorNegativos),
-        imgPath: dirImagesNegativos + "negativos.jpg",
+        imgPath: "${dirImagesNegativos}negativos.jpg",
         description: "Saída em teto e forte seguida por bidedos em uma escalada mais técnica"
             " até um grande platô, logo depois vem um trecho fácil, mas bem sujo."
             "\nVia alucinante do negativo!"
@@ -315,7 +315,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "8a",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "homemcaos.jpg",
+        imgPath: "${dirImagesFissuras}homemcaos.jpg",
       )
     );
     vias.add(
@@ -325,7 +325,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "6º",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "platos-toflow.jpg",
+        imgPath: "${dirImagesFissuras}platos-toflow.jpg",
         description: "Via com saída negativa de força em regletes até o Platô."
             "\nPara esquerda via positiva e de equilíbrio em pequenos regletes."
       )
@@ -337,7 +337,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7a",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "platos-toflow.jpg",
+        imgPath: "${dirImagesFissuras}platos-toflow.jpg",
         description: "Via com saída negativa de força em regletes até o Platô."
             "\nPara direita, linha de fenda até a parada."
       )
@@ -349,7 +349,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7b",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "platos-toflow.jpg",
+        imgPath: "${dirImagesFissuras}platos-toflow.jpg",
         description: "Via bastante interessante para escaladores que pretendem treinar escalada à vista. "
             "\nPossui bidedo, oposições, regletes e pinça."
       )
@@ -361,7 +361,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7b",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "tatuira.jpg",
+        imgPath: "${dirImagesFissuras}tatuira.jpg",
         description: "Linha composta por regletes. É simples e objetiva"
       )
     );
@@ -372,7 +372,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "5º",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "araramandinha-pedra_solta.jpg",
+        imgPath: "${dirImagesFissuras}araramandinha-pedra_solta.jpg",
         description: "Via para iniciantes que desejam treinar as primeiras guiadas."
             "\nApresenta regletes e uma fissura que permite treinar posicionamento."
       )
@@ -384,7 +384,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "6º",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "araramandinha-pedra_solta.jpg",
+        imgPath: "${dirImagesFissuras}araramandinha-pedra_solta.jpg",
         description: "Sua negatividade exige bom posicionamento do escalador e uma boa leitura."
             "\nEsta via permite extensão."
       )
@@ -396,7 +396,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "8c",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "3f-acai-tork-donzela.jpg",
+        imgPath: "${dirImagesFissuras}3f-acai-tork-donzela.jpg",
       )
     );
     vias.add(
@@ -406,7 +406,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "8b",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "3f-acai-tork-donzela.jpg",
+        imgPath: "${dirImagesFissuras}3f-acai-tork-donzela.jpg",
         description: "Via bem técnica e de movimentos diferentes,"
             "\nreza a lenda que quem a encadena recebe um açaí do seg."
       )
@@ -418,7 +418,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "8a",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "3f-acai-tork-donzela.jpg",
+        imgPath: "${dirImagesFissuras}3f-acai-tork-donzela.jpg",
         description: "Via negativa de força em agarrões e regletes nos crux."
             "\nBem protegida, com uma extensão de 2 corpos após a passagem do tetinho."
       )
@@ -430,7 +430,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7a",
         sector: _getSetorByName(ClimbingSector.setorFissuras),
-        imgPath: dirImagesFissuras + "3f-acai-tork-donzela.jpg",
+        imgPath: "${dirImagesFissuras}3f-acai-tork-donzela.jpg",
         description: "Uma das vias clássicas de Arara. Na primeira parte uma linha vertical "
             "de 8m em regletes até um grampo rapelável. "
             "\nSegunda parte segue por um lado, mas visando alcançar o outro. "
@@ -448,7 +448,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7a",
         sector: _getSetorByName(ClimbingSector.setorFenda),
-        imgPath: dirImagesFenda + "piriquita.jpg",
+        imgPath: "${dirImagesFenda}piriquita.jpg",
         description: "Uma das vias mais fotogênicas da Arara. "
             "\nA segunda parte é uma linha vertical de aproximadamente uns 20m com boa sequência de agarras e bem protegida."
             "\nObservação ! - A primeira proteção fixa está aproximadamente a 10m de altura em escalada livre positiva até uma parada dupla no platô. "
@@ -462,7 +462,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7a",
         sector: _getSetorByName(ClimbingSector.setorFenda),
-        imgPath: dirImagesFenda + "maraja-courocobra.jpg",
+        imgPath: "${dirImagesFenda}maraja-courocobra.jpg",
         description: "Via de saída positiva e sequência vertical em regletes até a parada dupla em 25m."
       )
     );
@@ -473,7 +473,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "5º / 7a**",
         sector: _getSetorByName(ClimbingSector.setorFenda),
-        imgPath: dirImagesFenda + "maraja-courocobra.jpg",
+        imgPath: "${dirImagesFenda}maraja-courocobra.jpg",
         description: "Via positiva clássica do setor, é bem protegida. Nos primeiros 30m é 5º grau."
             "\nA segunda enfiada** (“parte 2”) são mais uns 20m na diagonal de 7º grau em regletes bem pequenos. "
             "\nRapel em corda dupla.",
@@ -491,7 +491,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "4º Sup",
         sector: _getSetorByName(ClimbingSector.setorEscolinha),
-        imgPath: dirImagesEscolinha + "aerolitos.jpg",
+        imgPath: "${dirImagesEscolinha}aerolitos.jpg",
         description: "Via clássica do setor, de 30m e parada num balcão confortável. "
             "\nLinha positiva bem protegida numa sequência de positivo platô. "
             "\nPequeno crux antes da parada"
@@ -505,7 +505,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "4º Sup**",
         sector: _getSetorByName(ClimbingSector.setorEscolinha),
-        imgPath: dirImagesEscolinha + "primario.jpg",
+        imgPath: "${dirImagesEscolinha}primario.jpg",
         description: "Via positiva consolidada até o grampo, a partir daí a via não está limpa e não tem cadena.",
         warningNote: "A via encontra-se, até o momento, muita suja e com possíveis agarras “semi soltas”, "
             "quem decidir escalá-la requer atenção redobrada (e pro seg!)."
@@ -518,7 +518,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "5º",
         sector: _getSetorByName(ClimbingSector.setorEscolinha),
-        imgPath: dirImagesEscolinha + "bolas-secundario.jpg",
+        imgPath: "${dirImagesEscolinha}bolas-secundario.jpg",
         description: "Siga pela fenda ou à esquerda dela.",
         warningNote: "Cuidado para preservar o único cabeça de frade (cacto) "
             "restante que simboliza o início da via : )"
@@ -531,7 +531,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "4º",
         sector: _getSetorByName(ClimbingSector.setorEscolinha),
-        imgPath: dirImagesEscolinha + "bolas-secundario.jpg",
+        imgPath: "${dirImagesEscolinha}bolas-secundario.jpg",
         description: "Via de aquecimento com 15m, leve diagonal e boas agarras."
       )
     );
@@ -542,7 +542,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7c",
         sector: _getSetorByName(ClimbingSector.setorEscolinha),
-        imgPath: dirImagesEscolinha + "desafio.jpg",
+        imgPath: "${dirImagesEscolinha}desafio.jpg",
         description: "Via com saída positiva até uma passada de teto de bastante força. "
             "\nSequência negativa num diedro bem protegido onde é possível descansar as mãos. "
             "\nParte final vertical com poucas opções de agarras até a parada."
@@ -559,7 +559,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "6º",
         sector: _getSetorByName(ClimbingSector.setorDrone),
-        imgPath: dirImagesDrone + "drone.jpg",
+        imgPath: "${dirImagesDrone}drone.jpg",
         description: "Via de saída de força e virada de boulder."
             "\nBoa sequência de agarras à direita das chapas. Boa para ser feita à vista."
       )
@@ -571,7 +571,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "7c",
         sector: _getSetorByName(ClimbingSector.setorDrone),
-        imgPath: dirImagesDrone + "drone.jpg",
+        imgPath: "${dirImagesDrone}drone.jpg",
       )
     );
     vias.add(
@@ -581,7 +581,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "Projeto",
         sector: _getSetorByName(ClimbingSector.setorDrone),
-        imgPath: dirImagesDrone + "drone.jpg",
+        imgPath: "${dirImagesDrone}drone.jpg",
       )
     );
 
@@ -595,7 +595,7 @@ class ClimbingHelper {
         type: ClimbingRoute.sportType,
         grade: "Projeto",
         sector: _getSetorByName(ClimbingSector.setorIsoladas),
-        imgPath: dirImagesIsoladas + "escureto.jpg",
+        imgPath: "${dirImagesIsoladas}escureto.jpg",
       )
     );
     vias.add(
