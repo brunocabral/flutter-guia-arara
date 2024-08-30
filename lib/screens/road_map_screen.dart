@@ -13,7 +13,7 @@ class RoadmapScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 2,
-        title: Text("Como Chegar"),
+        title: const Text("Como Chegar"),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -23,12 +23,12 @@ class RoadmapScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              SizedBox(height: 16.0),
-              Text("São 70km de Aracaju a Macambira, com mais 12 km de terra até o point."),
-              SizedBox(height: 16.0),
-              Text("Seguir pista de asfalto e terra até a Fazenda Capitão."),
-              SizedBox(height: 32.0),
-              Align(
+              const SizedBox(height: 16.0),
+              const Text("São 70km de Aracaju a Macambira, com mais 12 km de terra até o point."),
+              const SizedBox(height: 16.0),
+              const Text("Seguir pista de asfalto e terra até a Fazenda Capitão."),
+              const SizedBox(height: 32.0),
+              const Align(
                   alignment: Alignment.center,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -38,30 +38,30 @@ class RoadmapScreen extends StatelessWidget {
                     ],
                   )
               ),
-              SizedBox(height: 8.0,),
+              const SizedBox(height: 8.0,),
               Container(
                 decoration: _customBoxDecoration(),
                 height: 400,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(16.0),
                   child: PhotoView(
-                      basePosition: Alignment(-.5, 1),
+                      basePosition: const Alignment(-.5, 1),
                       initialScale: PhotoViewComputedScale.contained * 1.0,
                       minScale: PhotoViewComputedScale.contained * 1.1,
                       maxScale: PhotoViewComputedScale.contained * 2.5,
-                      backgroundDecoration: BoxDecoration(
+                      backgroundDecoration: const BoxDecoration(
                         color: Colors.white,
                       ),
-                      imageProvider: AssetImage("images/maps/estrada.png")),
+                      imageProvider: const AssetImage("images/maps/estrada.png")),
                 ),
               ),
-              SizedBox(height: 8.0,),
+              const SizedBox(height: 8.0,),
               Align(
                 alignment: Alignment.center,
                 child: GestureDetector(
                   child: Chip(
                     avatar: Icon(Icons.pin_drop, color: Theme.of(context).primaryColor,),
-                    label: Text("Ver no Maps"),
+                    label: const Text("Ver no Maps"),
                     backgroundColor: Colors.white,
                     elevation: 1,
                   ),
@@ -86,24 +86,24 @@ class RoadmapScreen extends StatelessWidget {
   ///Neumorphism style decoration
   BoxDecoration _customBoxDecoration() {
     return BoxDecoration(
-      color: Color.fromRGBO(241, 243, 246, 100),
+      color: const Color.fromRGBO(241, 243, 246, 100),
       borderRadius: BorderRadius.circular(16.0),
       border: Border.all(
         color: Colors.white24, //borda interna
         width: 0.8,
       ),
       boxShadow: [
-        BoxShadow(
+        const BoxShadow(
             color: Color.fromRGBO(55, 84, 170, 0.05),
             offset: Offset(30, 30),
             blurRadius: 8.0),
         //upper light shadow
-        BoxShadow(
+        const BoxShadow(
             color: Color.fromRGBO(255, 255, 255, 0.6),
             offset: Offset(-9, -9),
             blurRadius: 8.0),
         //bottom darkshadow
-        BoxShadow(
+        const BoxShadow(
             color: Color.fromRGBO(163, 177, 198, 0.2),
             offset: Offset(9, 9),
             blurRadius: 12.0),

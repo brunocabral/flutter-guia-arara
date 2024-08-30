@@ -18,7 +18,7 @@ class GridMenu extends StatelessWidget{
         crossAxisCount: 2,
         childAspectRatio: 1.0,
         crossAxisSpacing: 32,
-        padding: EdgeInsets.only(left: 32, right: 32),
+        padding: const EdgeInsets.only(left: 32, right: 32),
         mainAxisSpacing: 24,
         children: menuItems.map((data) {
           return MenuTile(

@@ -47,8 +47,8 @@ class AfterSplash extends StatelessWidget {
     return MaterialApp(
         title: 'Guia Arara',
         theme: ThemeData(
-          primaryColor: Color.fromRGBO(5, 117, 230, 1),
-          scaffoldBackgroundColor: Color.fromRGBO(224, 229, 236, 1),
+          primaryColor: const Color.fromRGBO(5, 117, 230, 1),
+          scaffoldBackgroundColor: const Color.fromRGBO(224, 229, 236, 1),
         ),
         //Se o app já foi aberto alguma vez, e as telas de Intro foram lidas, pula diretamente para HomeScreen
         home: FutureBuilder<bool>(

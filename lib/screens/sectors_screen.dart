@@ -13,11 +13,11 @@ class SectorsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 2,
-        title: Text("Setores"),
+        title: const Text("Setores"),
         centerTitle: true,
       ),
       body: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0 ),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0 ),
           children: _buildSectorTiles()
       ),
     );

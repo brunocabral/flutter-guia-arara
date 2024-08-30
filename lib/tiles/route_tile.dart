@@ -27,7 +27,7 @@ class RouteTile extends StatelessWidget {
           ),
           title: Text(
             climbingRoute.name,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 18.0
             ),
           ),
@@ -39,7 +39,7 @@ class RouteTile extends StatelessWidget {
           ),
           trailing: Text(
             climbingRoute.grade,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 17,
               fontWeight: FontWeight.w600
             ),
@@ -52,7 +52,7 @@ class RouteTile extends StatelessWidget {
   ///Carrega imagem da via
   AssetImage _getImage(String? imgPath) {
     AssetImage img;
-    AssetImage placeholderImg = AssetImage("images/misc/placeholder.png");
+    AssetImage placeholderImg = const AssetImage("images/misc/placeholder.png");
     try {
       img = (imgPath != null) ? AssetImage(imgPath) : placeholderImg;
     } catch (e) {

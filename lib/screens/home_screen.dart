@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
           body: Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 16, right: 16),
+                padding: const EdgeInsets.only(left: 16, right: 16),
                 child: Image.asset(
                   "images/misc/capa_texto.png",scale: 3.0,
                 ),
@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
 
   Widget _buildMenuBackground() {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
             colors: [
               Color.fromRGBO(5, 117, 230, 1),

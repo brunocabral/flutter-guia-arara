@@ -6,7 +6,7 @@ class GradeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 2,
-        title: Text("Graduação"),
+        title: const Text("Graduação"),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -16,13 +16,13 @@ class GradeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              SizedBox(height: 16.0),
-              Text("Todas as vias esportivas estão graduadas na graduação brasileira e as vias "
+              const SizedBox(height: 16.0),
+              const Text("Todas as vias esportivas estão graduadas na graduação brasileira e as vias "
                   "de boulder na graduação Hueco."),
-              SizedBox(height: 32.0),
+              const SizedBox(height: 32.0),
               Container(
                   alignment: Alignment.center,
-                  padding: EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
                   decoration: _customBoxDecoration(context),
                   height: 400,
                   width: 400,
@@ -38,9 +38,9 @@ class GradeScreen extends StatelessWidget {
   ///Constrói tabela do nível de dificuldade de vias
   Table _buildTable(BuildContext context){
     return Table(
-      border: TableBorder.all(width: 2.0, color: Color.fromRGBO(163, 177, 198, 0.2)),
+      border: TableBorder.all(width: 2.0, color: const Color.fromRGBO(163, 177, 198, 0.2)),
       children: [
-        TableRow(
+        const TableRow(
             children: [
               Text(""),
               Text("Vias", textAlign: TextAlign.center),
@@ -50,8 +50,8 @@ class GradeScreen extends StatelessWidget {
         ),
         TableRow(
             children: [
-              Text("EUA", style: TextStyle(fontWeight: FontWeight.w500)),
-              Text("França", style: TextStyle(fontWeight: FontWeight.w500)),
+              const Text("EUA", style: TextStyle(fontWeight: FontWeight.w500)),
+              const Text("França", style: TextStyle(fontWeight: FontWeight.w500)),
               Text("Brasil",
                   style: TextStyle(
                       fontWeight: FontWeight.w900,
@@ -66,7 +66,7 @@ class GradeScreen extends StatelessWidget {
               ),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.9"),
               Text("5c"),
@@ -74,7 +74,7 @@ class GradeScreen extends StatelessWidget {
               Text(""),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.10a"),
               Text("5c+"),
@@ -82,7 +82,7 @@ class GradeScreen extends StatelessWidget {
               Text(""),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.10b"),
               Text("6a"),
@@ -90,7 +90,7 @@ class GradeScreen extends StatelessWidget {
               Text("V3"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.10c"),
               Text("6a+"),
@@ -98,7 +98,7 @@ class GradeScreen extends StatelessWidget {
               Text(""),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.10d"),
               Text("6b"),
@@ -106,7 +106,7 @@ class GradeScreen extends StatelessWidget {
               Text("V3/V4"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.11a"),
               Text("6b+"),
@@ -114,7 +114,7 @@ class GradeScreen extends StatelessWidget {
               Text("V4"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.11b/c"),
               Text("6c+"),
@@ -122,7 +122,7 @@ class GradeScreen extends StatelessWidget {
               Text("V5"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.11d"),
               Text("7a"),
@@ -130,7 +130,7 @@ class GradeScreen extends StatelessWidget {
               Text("V6"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.12a"),
               Text("7a+"),
@@ -138,7 +138,7 @@ class GradeScreen extends StatelessWidget {
               Text("V7"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.12b"),
               Text("7b"),
@@ -146,7 +146,7 @@ class GradeScreen extends StatelessWidget {
               Text("V8"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.12c"),
               Text("7b+"),
@@ -154,7 +154,7 @@ class GradeScreen extends StatelessWidget {
               Text("V8/9"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.12d"),
               Text("7c"),
@@ -162,7 +162,7 @@ class GradeScreen extends StatelessWidget {
               Text("V9/10"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.13a"),
               Text("7c+"),
@@ -170,7 +170,7 @@ class GradeScreen extends StatelessWidget {
               Text("V10"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.13b"),
               Text("8a"),
@@ -178,7 +178,7 @@ class GradeScreen extends StatelessWidget {
               Text("V11"),
             ]
         ),
-        TableRow(
+        const TableRow(
             children: [
               Text("5.13c"),
               Text("8a+"),
@@ -201,17 +201,17 @@ class GradeScreen extends StatelessWidget {
         ),
         boxShadow: [
           //bottom wide subtle dark shadow
-          BoxShadow(
+          const BoxShadow(
               color: Color.fromRGBO(55, 84, 170, 0.05),
               offset: Offset(30, 30),
               blurRadius: 8.0),
           //upper light shadow
-          BoxShadow(
+          const BoxShadow(
               color: Color.fromRGBO(255, 255, 255, 0.6),
               offset: Offset(-9, -9),
               blurRadius: 8.0),
           //bottom darkshadow
-          BoxShadow(
+          const BoxShadow(
               color: Color.fromRGBO(163, 177, 198, 0.2),
               offset: Offset(9, 9),
               blurRadius: 12.0),

@@ -34,7 +34,7 @@ class RoutesScreen extends StatelessWidget {
     }
 
     if (tiles.isEmpty){
-      tiles.add(Center(child: Text("Não foram encontradas vias para este setor"),));
+      tiles.add(const Center(child: Text("Não foram encontradas vias para este setor"),));
     }
 
     return tiles;

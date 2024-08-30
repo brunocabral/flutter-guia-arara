@@ -7,7 +7,7 @@ class ClimbmapScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 2,
-        title: Text("Mapa Local"),
+        title: const Text("Mapa Local"),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -17,11 +17,11 @@ class ClimbmapScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              SizedBox(height: 16.0),
-              Text("Nas duas travessias de rio, a altura da água varia normalmente "
+              const SizedBox(height: 16.0),
+              const Text("Nas duas travessias de rio, a altura da água varia normalmente "
                   "entre 20 ~ 60 cm de altura"),
-              SizedBox(height: 32.0),
-              Align(
+              const SizedBox(height: 32.0),
+              const Align(
                   alignment: Alignment.center,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +31,7 @@ class ClimbmapScreen extends StatelessWidget {
                     ],
                   )
               ),
-              SizedBox(height: 8.0,),
+              const SizedBox(height: 8.0,),
               Container(
                 decoration: _customBoxDecoration(),
                 height: 400,
@@ -41,12 +41,12 @@ class ClimbmapScreen extends StatelessWidget {
                       initialScale: PhotoViewComputedScale.contained * 1,
                       minScale: PhotoViewComputedScale.contained * 1,
                       maxScale: PhotoViewComputedScale.contained * 2.5,
-                      backgroundDecoration: BoxDecoration(color: Colors.white),
-                      imageProvider: AssetImage("images/maps/croqui.png")
+                      backgroundDecoration: const BoxDecoration(color: Colors.white),
+                      imageProvider: const AssetImage("images/maps/croqui.png")
                   ),
                 ),
               ),
-              SizedBox(height: 8.0),
+              const SizedBox(height: 8.0),
             ],
           ),
         ),
@@ -64,17 +64,17 @@ class ClimbmapScreen extends StatelessWidget {
           width: 0.6,
         ),
         boxShadow: [
-          BoxShadow(
+          const BoxShadow(
               color: Color.fromRGBO(55, 84, 170, 0.05),
               offset: Offset(30, 30),
               blurRadius: 8.0),
           //upper light shadow
-          BoxShadow(
+          const BoxShadow(
               color: Color.fromRGBO(255, 255, 255, 0.6),
               offset: Offset(-9, -9),
               blurRadius: 8.0),
           //bottom darkshadow
-          BoxShadow(
+          const BoxShadow(
               color: Color.fromRGBO(163, 177, 198, 0.2),
               offset: Offset(9, 9),
               blurRadius: 12.0),

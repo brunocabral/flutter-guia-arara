@@ -31,7 +31,7 @@ class DetailsScreen extends StatelessWidget {
                     initialScale: PhotoViewComputedScale.contained * 1.0,
                     minScale: PhotoViewComputedScale.contained * 1.0,
                     maxScale: PhotoViewComputedScale.contained * 2.8,
-                    backgroundDecoration: BoxDecoration(
+                    backgroundDecoration: const BoxDecoration(
                       color: Colors.black12,
                     ),
                     imageProvider: _getImage(route.imgPath),
@@ -51,7 +51,7 @@ class DetailsScreen extends StatelessWidget {
               ),
               child: Center(
                 child: Text(route.id,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 24.0,
                     fontWeight: FontWeight.bold
                   ),
@@ -67,7 +67,7 @@ class DetailsScreen extends StatelessWidget {
   ///Carrega imagem da via
   AssetImage _getImage(String? imgPath) {
     AssetImage img;
-    AssetImage placeholderImg = AssetImage("images/misc/placeholder.png");
+    AssetImage placeholderImg = const AssetImage("images/misc/placeholder.png");
     try {
       img = (imgPath != null) ? AssetImage(imgPath): placeholderImg;
     } catch (e) {
@@ -79,28 +79,28 @@ class DetailsScreen extends StatelessWidget {
   Container _buildContent(context, ClimbingRoute route) {
     return Container(
           height: MediaQuery.of(context).size.height / 2 - _circleSize,
-          padding: EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 8.0),
           child: SingleChildScrollView(
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             child: Column(
               children: <Widget>[
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 Container(
-                  padding: EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(8),
                   decoration: _customBoxDecoration(context),
                   child: Text(
                     route.name,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 22.0,
                       color: Colors.black
                     ),
                   ),
                 ),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("Modalidade:"),
+                    const Text("Modalidade:"),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Chip(
@@ -113,7 +113,7 @@ class DetailsScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Text("Grau:"),
+                    const Text("Grau:"),
                     Chip(
                       backgroundColor: Colors.white,
                       label: Text(
@@ -126,25 +126,25 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 //Constrói chip apenas se existir observação
                 route.warningNote != null ?
-                Chip(
+                const Chip(
                   label: Text("Observação"),
                   backgroundColor: Colors.deepOrange,
-                ) : SizedBox.shrink(),
+                ) : const SizedBox.shrink(),
                 Text(route.warningNote ?? "",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16,
                     color: Color.fromRGBO(133, 8, 8, 1),
                     height: 1.2
                   ),
                 ),
-                Divider(),
-                Text("Descrição", textAlign: TextAlign.center,),
-                SizedBox(height: 8.0,),
+                const Divider(),
+                const Text("Descrição", textAlign: TextAlign.center,),
+                const SizedBox(height: 8.0,),
                 Text(route.description ?? "Nenhuma descrição cadastrada",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 18,
                     height: 1.2
                   ),
@@ -181,17 +181,17 @@ class DetailsScreen extends StatelessWidget {
         ),
         boxShadow: [
           //bottom wide subtle dark shadow
-          BoxShadow(
+          const BoxShadow(
               color: Color.fromRGBO(55, 84, 170, 0.05),
               offset: Offset(30, 30),
               blurRadius: 8.0),
           //upper light shadow
-          BoxShadow(
+          const BoxShadow(
               color: Color.fromRGBO(255, 255, 255, 0.6),
               offset: Offset(-5, -5),
               blurRadius: 8.0),
           //bottom dark shadow
-          BoxShadow(
+          const BoxShadow(
               color: Color.fromRGBO(163, 177, 198, 0.2),
               offset: Offset(9, 9),
               blurRadius: 12.0),

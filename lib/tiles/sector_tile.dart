@@ -27,7 +27,7 @@ class SectorTile extends StatelessWidget {
           leading: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
+              const Text(
                 "Setor",
                 style: TextStyle(
                     fontSize: 16,
@@ -36,7 +36,7 @@ class SectorTile extends StatelessWidget {
               ),
               Text(
                 climbingSector.id,
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w400
                 ),
@@ -45,7 +45,7 @@ class SectorTile extends StatelessWidget {
           ),
           title: Text(
             climbingSector.name,
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.w600,
               fontSize: 18
             ),

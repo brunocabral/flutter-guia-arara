@@ -24,11 +24,11 @@ class MenuTile extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Icon(iconData, size: 48),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(title),
-            SizedBox(
+            const SizedBox(
               height: 6,
             ),
           ],

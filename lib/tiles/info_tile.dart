@@ -22,7 +22,7 @@ class CustomInfoTile extends StatelessWidget {
           size: iconSize ?? 20.0,
           color: Colors.black,
         ),
-        SizedBox(width: 8.0),
+        const SizedBox(width: 8.0),
         Expanded(
           child: Text(
             text,
