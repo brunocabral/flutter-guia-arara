@@ -138,15 +138,15 @@ class InfoScreen extends StatelessWidget {
                         onPressed: () {
                             Navigator.pop(context);
                           },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(5, 117, 230, 1)
+                        ),
                           child: const Text(
                             "Entendi!",
                             style: TextStyle(
                               color: Colors.white
                             ),
-                          ),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromRGBO(5, 117, 230, 1)
-                        )
+                          )
                       )
                     )
                   ],
