@@ -57,7 +57,7 @@ class RoadmapScreen extends StatelessWidget {
                       imageProvider: const AssetImage("images/maps/estrada.png")),
                 ),
               ),
-              const SizedBox(height: 8.0,),
+              const SizedBox(height: 24.0,),
               Align(
                 alignment: Alignment.center,
                 child: GestureDetector(

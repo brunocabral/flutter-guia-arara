@@ -37,7 +37,7 @@ class GridMenu extends StatelessWidget{
   List<Item> _buildItems(){
     List<Item> items = [];
     items.add(
-        Item(title: "Orientações Básicas", icon: Icons.announcement, route: InfoScreen())
+        Item(title: "Orientações \ne Segurança", icon: Icons.announcement, route: InfoScreen())
     );
     items.add(
         Item(title: "Como Chegar", icon: Icons.directions_car, route: RoadmapScreen())

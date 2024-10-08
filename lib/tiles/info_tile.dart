@@ -32,7 +32,7 @@ class CustomInfoTile extends StatelessWidget {
                 fontStyle: FontStyle.italic,
                 fontFamily: 'Raleway'
             ),
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.left,
           ),
         )
       ],
