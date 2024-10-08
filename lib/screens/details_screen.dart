@@ -114,16 +114,19 @@ class DetailsScreen extends StatelessWidget {
                       ),
                     ),
                     const Text("Grau:"),
-                    Chip(
-                      backgroundColor: Colors.white,
-                      label: Text(
-                        route.grade,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: _getChipColorByType(route.type)
+                    Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: Chip(
+                        backgroundColor: Colors.white,
+                        label: Text(
+                          route.grade,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: _getChipColorByType(route.type)
+                          ),
                         ),
                       ),
-                    ),
+                    )
                   ],
                 ),
                 const SizedBox(height: 16.0),
